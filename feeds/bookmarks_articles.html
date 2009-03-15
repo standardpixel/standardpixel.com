@@ -1,0 +1,11 @@
+<?php
+
+$ch = curl_init("http://del.icio.us/rss/dropinastorm/articles");
+
+//curl_setopt($ch, CURLOPT_HEADER, 0);
+
+curl_exec($ch);
+
+curl_close($ch);
+
+?>
