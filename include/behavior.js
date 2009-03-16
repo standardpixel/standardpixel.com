@@ -22,6 +22,43 @@ window.stapix = {
 			aUA = this.getUA();
 
 		Body.className = 'is' + aUA.ua + ' ' + 'is' + aUA.ver;
+	},
+	
+	getAsyncMarkup : function( container, uri, params, scope ){
+		
+		if( !scope ){
+			
+			scope = this;
+			
+		}
+		
+		if( !params ){
+			
+			params = '';
+			
+		}
+		
+		container.innerHTML = 'Loading content...';
+		
+		YAHOO.util.Connect.asyncRequest(
+			'POST', 
+			uri,
+			{
+				success : function( response ){
+					
+					container.innerHTML = response.responseText;
+					
+				},
+				failure:function(){
+					
+					container.innerHTML = '<a href="?showbasic">See more content</a>';
+					
+				},
+				scope: scope
+			}, 
+			params
+		);
+		
 	}
 	
 };

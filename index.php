@@ -22,21 +22,16 @@
 	</div>
 	<?php $sp->include_nav() ?>
 	<div id="sidebar">
-		<div id="posts">
-			<h3>Articles I am reading</h3>
-			<?php
-			$rss_url="http://del.icio.us/rss/dropinastorm/article";
-			$rss_limit=8;
-			include('feeds/rss.html')
-			?>	
-		</div>
-		<div id="tools">
-			<h3>Tools I am using</h3>
-			<?php
-			$rss_url="http://del.icio.us/rss/dropinastorm/tool";
-			$rss_limit=8;
-			include('feeds/rss.html')
-			?>	
-		</div>
+		<? if( $_GET['showbasic'] != true ){ ?>
+			<a href="?showbasic=true">See more content</a>
+		<? } else { ?>
+			<?php include("async_delicious.php"); ?>
+		<? } ?>
 	</div>
 <?php $sp->include_footer() ?>
+
+<? if( $_GET['showbasic'] != true ){ ?>
+	<script>
+		stapix.getAsyncMarkup(document.getElementById('sidebar'),'async_delicious.php');
+	</script>
+<? } ?>
