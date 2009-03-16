@@ -15,6 +15,12 @@
 	
 		require($sp->root_path . "rollbahn.css");
 	
+	} else {
+		
+		require($sp->root_path . "base_ie6.css");
+	
+		require($sp->root_path . "rollbahn_ie6.css");
+		
 	}
 	
  	//Write dynamic css
