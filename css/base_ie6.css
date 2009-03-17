@@ -1,0 +1,30 @@
+/* Page Level */
+body{width:863px;margin:0 auto;}
+h1, h3{margin:.5em 0;font-size:200%;}
+h2, h4{margin:0;margin-bottom:.3em;}
+h4{}
+h3 span{font-size:35%;}
+
+/* Header */
+#header{width:100%;height:216px;}
+
+/* Nav */
+#logo{width:260px;height:77px;z-index:100;}
+#navigation{position:absolute; top:0; right:0;height:16px;padding:10px;}
+#navigation ul{margin:0;list-style-type:none;display:inline;}
+#navigation ul li{margin-left:1em;}
+
+/* feature */
+#feature{margin-left:10px;width:540px;}
+
+/* Sidebar */
+#sidebar{width:250px;}
+#sidebar h3, #sidebar h4{font-size:100%;}
+
+/* Resume */
+#container h3{margin:0;padding:0;line-height:20pt;}
+#container h2{padding-top:20px;}
+
+/* vCard */
+.vcard{width:243px;}
+#container{padding:0 10px 0 10px;}
