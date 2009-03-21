@@ -1,7 +1,7 @@
 <?php 
 	class SP {
-	    public $root_path = "/Library/WebServer/Documents/domains/ComStandardpixel/";
-	    public $media_path = "/domains/ComStandardpixel/";
+	    public $root_path = "/var/www/domains/ComStandardpixelDev/";
+	    public $media_path = "/";
 
 	    function include_header($title){
 		  	$sp_title = $title;
