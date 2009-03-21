@@ -2,14 +2,14 @@
 <?php
 require_once "XML/RSS.php";
 
-if($_GET['url']){
-	$rss_url=$_GET['url'];
-}
+// if($_GET['url']){
+//	$rss_url=$_GET['url'];
+// }
 
 if($rss_url){
-	if($_GET['limit']){
-		$rss_limit=$_GET['limit'];
-	}
+	//if($_GET['limit']){
+		//$rss_limit=$_GET['limit'];
+	//}
 
 	//Get Feed data
 	$rss =& new XML_RSS($rss_url);
