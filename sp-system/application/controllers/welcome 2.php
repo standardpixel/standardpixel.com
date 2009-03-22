@@ -9,7 +9,13 @@ class Welcome extends Controller {
 	
 	function index()
 	{
-		$this->load->view('welcome_message');
+		$this->title = "Web Development Services";
+		
+		$this->load->view('header');
+		
+		$this->load->view('welcome_index');
+		
+		$this->load->view('footer');
 	}
 }
 
