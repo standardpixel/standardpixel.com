@@ -16,7 +16,7 @@
 	<script src="http://yui.yahooapis.com/2.7.0/build/connection/connection-min.js"></script>
 	
 	<!-- StaPx source file --> 
-	<script type="text/javascript" src="/include/behavior.js" ></script>
+	<script type="text/javascript" src="http://s.standardpixel.com.nyud.net:8080/j/behavior.js" ></script>
 	
 	<? if( $this->input->post('showbasic') != true ){ ?>
 		<script>
