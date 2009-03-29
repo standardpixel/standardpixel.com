@@ -78,15 +78,19 @@ class Feed extends Controller {
 
 		foreach($this->remoteContent['friendfeed']->get_items() as $item) {
 			
-			echo '<li>';
+			if( substr ( $item->get_title() , 0 , 1 ) != '@' ){
 			
-			echo '<div><a href="' . $item->get_link() . '">';
-			echo $item->get_title(); 
-			echo '</a></div>';
+				echo '<li>';
 			
-			echo '<div>' . $item->get_description() . '</div>';
+				echo '<div><a href="' . $item->get_link() . '">';
+				echo $item->get_title(); 
+				echo '</a></div>';
 			
-			echo '</li>';
+				echo '<div>' . $item->get_description() . '</div>';
+			
+				echo '</li>';
+			
+			}
 			
 		} // end foreach
 		
