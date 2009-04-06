@@ -4,7 +4,7 @@
 			<li><a href="http://standardpixel.com/EricGelinas-		WebInterfaceEngineer.php">Resum&eacute;</a></li>
 			<li><a href="http://blog.standardpixel.com">Blog</a></li>
 			<!--<li><a href="/contact.php">Contact</a></li>-->
-			<li><a href="http://standardpixel.com/status.php">Status</a></li>
+			<li><a href="http://github.com/standardpixel/standarpixel.com/">Source</a></li>
 		</ul>
 	</div>
 	<div id="footer">
@@ -20,7 +20,7 @@
 	
 	<? if( $this->input->post('showbasic') != true ){ ?>
 		<script>
-			stapix.getAsyncMarkup(document.getElementById('sidebar'),'async_delicious.php');
+			stapix.getAsyncMarkup(document.getElementById('feed_deliciousTool_content'),'index.php/feed/deliciousTool');
 		</script>
 	<? } ?>
 </body>

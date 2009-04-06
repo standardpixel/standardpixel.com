@@ -4,11 +4,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-	<link rel="shortcut icon" href="http://s.standardpixel.com.nyud.net:8080/i/favicon.ico" type="image/x-icon">
-	<link rel="apple-touch-icon" href="http://s.standardpixel.com.nyud.net:8080/i/touch-icon.gif"/>
+	<link rel="shortcut icon" href="http://s.standardpixel.com/i/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="http://s.standardpixel.com/i/touch-icon.gif"/>
 	<title><?= $this->title; ?> : StandardPixel LLC</title>
 	<link href="http://feeds.feedburner.com/StandardPixel" rel="alternate" type="application/rss+xml" title="StandardPixel RSS Feed" />
-	<link type="text/css" media="screen" rel="stylesheet" href="http://s.standardpixel.com.nyud.net:8080/d/style.php" />
+	<link type="text/css" media="screen" rel="stylesheet" href="http://s.standardpixel.com/d/style.php" />
 	
 </head>
 

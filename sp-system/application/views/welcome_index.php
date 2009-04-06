@@ -16,12 +16,17 @@
 		
 	</div>
 	<div id="sidebar">
-		<? if( $this->input->post('showbasic') != true ){ ?>
-			<form action="./" method="post">
-				<input type="hidden" name="showbasic" value="true">
-				<button>See more content</button>
-			</form>
-		<? } else { ?>
-			<?php include("async_delicious.php"); ?>
-		<? } ?>
+		<div id="feed_deliciousTool" class="feed">
+			<h3>Interesting Apps</h3>
+			<div id="feed_deliciousTool_content" class="content">
+				<? if( $this->input->post('showbasic') != true ){ ?>
+					<form action="./" method="post">
+						<input type="hidden" name="showbasic" value="true">
+						<button>See more content</button>
+					</form>
+				<? } else { ?>
+					<?php print_r($this); ?>
+				<? } ?>	
+			</div>
+		</div>
 	</div>

@@ -14,7 +14,8 @@ class Feed extends Controller {
 	function index()
 	{	
 	
-        $this->load->view('feed_index');
+
+		$this->load->view('feed_index');
         
 	}
 	
