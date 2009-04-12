@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-	<title>StandardPixel.com - Page Description</title>
+	<title>StandardPixel.com - <?= $this->title ?></title>
 	<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.5.2/build/fonts/fonts-min.css">	
 	<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.5.2/build/reset/reset-min.css">
 	<style>
@@ -68,7 +68,8 @@
 			.millbahn #navigation li{display:inline;padding-right:.12em;}
 
 			/* Article */
-			.millbahn .article .date{line-height:12px;}
+			.millbahn .article{margin-bottom:20px;}
+			.millbahn .article .date, .millbahn .article .attribute{line-height:12px;}
 			.millbahn .article .moreinfo{background-color:#fff;margin:10px 0;padding:3px;}
 
 			/* Footer */
