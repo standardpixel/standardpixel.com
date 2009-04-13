@@ -8,11 +8,11 @@
 		<div id="content_1" class="area col1">
 			<div class="article module col1">
 				<h4>StandardPixel LLC is...</h4>
-				<p> a side project of Front-End Engineer, Eric Gelinas. This site includes links to current projects and agile web development information. Please contact <a href="mailto:info@standardpixel.com">info@standardpixel.com</a> if you would like to know more.</p>
+				<p> a side project of Front-End Engineer, <a href="http://standardpixel.com/EricGelinas-WebInterfaceEngineer.php">Eric Gelinas</a>. This site includes links to current projects and agile web development information. Please contact <a href="mailto:info@standardpixel.com">info@standardpixel.com</a> if you would like to know more.</p>
 			</div>
 			
 			<div class="article module col1">
-				<h4>Current Activity</h4>
+				<h4>Active Projects</h4>
 				<div class="attribute">from <a href="https://github.com/standardpixel">github.com</a></div>
 				<p>
 				<strong><a href="http://github.com/standardpixel/stapx-for-yui/tree">STAPIX for YUI</a> - </strong>
@@ -26,7 +26,19 @@
 		
 		</div>
 		<div id="content_2" class="module content col2">
-			<h3>Interesting Apps</h3>
+			<h4>Recently loved articles</h4>
+			<div class="attribute">from <a href="https://github.com/standardpixel">delicious.com</a></div>
+			<div id="feed_deliciousTool_content" class="list">
+				<? if( $this->input->post('showbasic') != true ){ ?>
+					<form action="./" method="post">
+						<input type="hidden" name="showbasic" value="true">
+						<button>See more content</button>
+					</form>
+				<? } else { ?>
+					<?php $this->load->view('feed_index'); ?>
+				<? } ?>				
+			</div>
+			<h4>General online chatter</h4>
 			<div id="feed_deliciousTool_content" class="list">
 				<? if( $this->input->post('showbasic') != true ){ ?>
 					<form action="./" method="post">

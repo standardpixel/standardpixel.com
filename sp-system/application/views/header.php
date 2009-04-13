@@ -3,6 +3,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="/img/apple-touch-icon.png"/>
+	<link href="http://feeds.feedburner.com/StandardPixel" rel="alternate" type="application/rss+xml" title="StandardPixel RSS Feed" />
 	<title>StandardPixel.com - <?= $this->title ?></title>
 	<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.5.2/build/fonts/fonts-min.css">	
 	<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.5.2/build/reset/reset-min.css">
@@ -22,8 +25,8 @@
 			.millbahn h1{font-size:435%;}
 			.millbahn h4{font-size:165%;color:#999;}
 			.millbahn .module{border:solid #eee 3px;}
-			.millbahn .col1{background:url('col1_bg.png') right top repeat-y;}
-			.millbahn .col2{background:url('col2_bg.png') left top repeat-y;}
+			.millbahn .module.col1{background:url('http://dev.s.standardpixel.com/i/col1_bg.png') right top repeat-y;}
+			.millbahn .module.col2{background:url('http://dev.s.standardpixel.com/i/col2_bg.png') left top repeat-y;}
 
 			/* Header */
 			.millbahn h1 .standard{color:#b00;}
@@ -61,7 +64,7 @@
 
 			/* Content 2 */
 			.millbahn #content_2{top:149px;bottom:62px;overflow:auto;}
-			.millbahn #content_2 h4{margin-bottom:1em;}
+			.millbahn #content_2 h4{margin-bottom_:1em;}
 
 			/* Navigation */
 			.millbahn #navigation{top:0px;}
@@ -71,6 +74,10 @@
 			.millbahn .article{margin-bottom:20px;}
 			.millbahn .article .date, .millbahn .article .attribute{line-height:12px;}
 			.millbahn .article .moreinfo{background-color:#fff;margin:10px 0;padding:3px;}
+			
+			/* List */
+			.millbahn .list{margin-bottom:20px;}
+			.millbahn .list .date, .millbahn .list .attribute{line-height:12px;}
 
 			/* Footer */
 			.millbahn #footer{margin:20px 0 0 0;}

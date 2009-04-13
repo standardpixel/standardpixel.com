@@ -2,16 +2,20 @@
 			<h3>Navigation</h3>
 			<ul>
 				<!--<li><a href="http://standardpixel.com/">Home</a></li>-->
-				<li><a href="http://standardpixel.com/EricGelinas-		WebInterfaceEngineer.php">Resum&eacute;</a></li>
+				<li><a href="http://standardpixel.com/EricGelinas-		WebInterfaceEngineer.php">About Eric</a></li>
+				<!--<li><a href="http://standardpixel.com/EricGelinas-		WebInterfaceEngineer.php">Resum&eacute;</a></li>-->
 				<li><a href="http://blog.standardpixel.com">Blog</a></li>
 				<!--<li><a href="/contact.php">Contact</a></li>-->
-				<li><a href="http://github.com/standardpixel/standarpixel.com/">Source</a></li>
+				<li><a href="http://github.com/standardpixel/standarpixel.com/">Portfolio</a></li>
 			</ul>
 		</div>
 		<div id="footer" class="module">
 			<div>&copy;&nbsp;<?=date('Y');?>&nbsp;StandardPixel LLC, All Rights Reserved.</div>
 			<div>&nbsp;-&nbsp;</div>
-			<div><a href="mailto:info@standardpixel.com">info@standardpixel.com</a></div>
+			<div>
+				<a href="mailto:info@standardpixel.com">info@standardpixel.com</a>
+				&nbsp;[ <a href="http://github.com/standardpixel/standarpixel.com/">Source Code</a> ]
+			</div>
 		</div>
 	</div>
 	<!-- YAHOO Global Object source file --> 
