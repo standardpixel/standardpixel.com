@@ -9,6 +9,8 @@ class Welcome extends Controller {
 	
 	function index()
 	{
+		$this->load->library('getremotecontent');
+		
 		$this->title = "Web Development Services";
 		
 		$this->load->view('header');

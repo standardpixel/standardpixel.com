@@ -55,6 +55,8 @@
 			.millbahn h2, h3{display:none;}
 			.millbahn .col2{position:absolute;width:20%;right:10px;}
 			.millbahn .module{padding:10px;}
+			.millbahn .module ul{padding: 6px;}
+            .millbahn .list ul li {font-size:80%;text-decoration: none;list-style-position:outside;list-style-type: none;margin:0 0 10px 0;}
 
 			/* Header */
 			.millbahn #header{padding:63px 10px 0 10px;}
@@ -63,7 +65,7 @@
 			.millbahn #content_1{margin:4px 25% 0 0;}
 
 			/* Content 2 */
-			.millbahn #content_2{top:149px;bottom:62px;overflow:auto;}
+			.millbahn #content_2{top:149px;bottom:62px;overflow:hidden;}
 			.millbahn #content_2 h4{margin-bottom_:1em;}
 
 			/* Navigation */
@@ -77,7 +79,7 @@
 			
 			/* List */
 			.millbahn .list{margin-bottom:20px;}
-			.millbahn .list .date, .millbahn .list .attribute{line-height:12px;}
+			.millbahn .list .date, .millbahn .list .attribute{line-height:12px;font-size:80%;}
 
 			/* Footer */
 			.millbahn #footer{margin:20px 0 0 0;}

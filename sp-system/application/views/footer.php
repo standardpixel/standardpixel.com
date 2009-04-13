@@ -31,7 +31,9 @@
 	
 	<? if( $this->input->post('showbasic') != true ){ ?>
 		<script>
-			//stapix.getAsyncMarkup(document.getElementById('feed_deliciousTool_content'),'index.php/feed/deliciousTool');
+		stapix.getAsyncMarkup(document.getElementById('feed_deliciousArticle_content'),'index.php/feed/deliciousArticle');
+		
+		stapix.getAsyncMarkup(document.getElementById('feed_friendfeed_content'),'index.php/feed/friendfeed');
 		</script>
 	<? } ?>
 	<script>

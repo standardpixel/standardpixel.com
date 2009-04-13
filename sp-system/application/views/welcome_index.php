@@ -28,25 +28,25 @@
 		<div id="content_2" class="module content col2">
 			<h4>Recently loved articles</h4>
 			<div class="attribute">from <a href="https://github.com/standardpixel">delicious.com</a></div>
-			<div id="feed_deliciousTool_content" class="list">
+			<div id="feed_deliciousArticle_content" class="list">
 				<? if( $this->input->post('showbasic') != true ){ ?>
 					<form action="./" method="post">
 						<input type="hidden" name="showbasic" value="true">
 						<button>See more content</button>
 					</form>
 				<? } else { ?>
-					<?php $this->load->view('feed_index'); ?>
+					<?php $this->getremotecontent->deliciousArticle(); ?>
 				<? } ?>				
 			</div>
 			<h4>General online chatter</h4>
-			<div id="feed_deliciousTool_content" class="list">
+			<div id="feed_friendfeed_content" class="list">
 				<? if( $this->input->post('showbasic') != true ){ ?>
 					<form action="./" method="post">
 						<input type="hidden" name="showbasic" value="true">
 						<button>See more content</button>
 					</form>
 				<? } else { ?>
-					<?php print_r($this); ?>
+					<?php $this->getremotecontent->friendfeed(); ?>
 				<? } ?>				
 			</div>
 		</div>
