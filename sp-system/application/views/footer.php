@@ -25,19 +25,70 @@
 	<!-- Dependencies -->
 	<script src="http://yui.yahooapis.com/2.7.0/build/dom/dom-min.js"></script>
 
+	<script src="http://yui.yahooapis.com/2.7.0/build/selector/selector-min.js"></script>
 	
 	<!-- StaPx source file --> 
 	<script type="text/javascript" src="http://s.standardpixel.com/j/behavior.js" ></script>
 	
 	<? if( $this->input->post('showbasic') != true ){ ?>
 		<script>
+		
+			var SELECTOR = YAHOO.util.Selector,
+				Dom = YAHOO.util.Dom;
 		stapix.getAsyncMarkup(document.getElementById('feed_deliciousArticle_content'),'index.php/feed/deliciousArticle');
 		
 		stapix.getAsyncMarkup(document.getElementById('feed_friendfeed_content'),'index.php/feed/friendfeed');
+		
+		window.listShrinkafier = function(){	
+			var group = SELECTOR.query('.listGroup')[0],
+				lists = SELECTOR.query('.listGroup .list'),
+				listCount = lists.length,
+				viewHeight = Dom.getViewportHeight(),
+				mainListCount = null,
+				bottomPosition = null;
+			
+			for( var i=0; listCount > i; i++ ){
+			
+				var list = lists[ i ],
+					items = SELECTOR.query( 'ul li', list ),
+					lastIteration = listCount -1,
+					offsetCount = mainListCount - items.length;
+				
+				if( i == 0 ){ //First iteration
+				
+					//Capture count of first list since none will be longer
+					mainListCount = items.length
+				
+				} else if( i == lastIteration ) { //Last iteration
+				
+					//Get the lowest position
+					bottomPosition = Dom.getY( group ) + group.offsetHeight;
+					
+					console.log(offsetCount);
+					
+				} else {
+				
+					
+				
+				}
+				
+				if( viewHeight < bottomPosition ){
+					/*
+					while( viewHeight < bottomPosition ){
+						
+						console.log( bottomPosition -= 1 );
+						
+						bottomPosition = Dom.getY( group ) + group.offsetHeight;
+						
+					}
+					*/
+				
+				}
+			
+			}
+		}
+			
 		</script>
 	<? } ?>
-	<script>
-		YAHOO.util.Dom.addClass( document.getElementsByTagName( 'body' )[ 0 ], 'poop' );
-	</script>
 </body>
 </html>
