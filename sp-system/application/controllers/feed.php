@@ -136,16 +136,16 @@ class Feed extends Controller {
     	$this->remoteContent['deliciousArticle'] = $this->simplepie;
     	
     	echo "<ul>";
-
+		
 		foreach($this->remoteContent['deliciousArticle']->get_items() as $item) {
-			
+
 			echo '<li>';
 			
 			echo '<div><a href="' . $item->get_link() . '">';
 			echo $item->get_title(); 
 			echo '</a></div>';
 			
-			echo '<div>' . $item->get_description() . '</div>';
+			echo '<div>' . $item->get_date() . '</div>';
 			
 			echo '</li>';
 			

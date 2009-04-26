@@ -146,7 +146,7 @@ class GetRemoteContent {
 			echo $item->get_title(); 
 			echo '</a></div>';
 			
-			echo '<div>' . $item->get_description() . '</div>';
+			echo '<div>' . $item->get_date() . '</div>';
 			
 			echo '</li>';
 			
@@ -176,7 +176,7 @@ class GetRemoteContent {
 			echo $item->get_title(); 
 			echo '</a></div>';
 			
-			echo '<div>' . $item->get_description() . '</div>';
+			echo '<div>' . $item->get_description() . 'moo</div>';
 			
 			echo '</li>';
 			
