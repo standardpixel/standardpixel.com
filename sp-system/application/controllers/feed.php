@@ -87,7 +87,7 @@ class Feed extends Controller {
 				echo $item->get_title(); 
 				echo '</a></div>';
 			
-				echo '<div>' . $item->get_description() . '</div>';
+				echo '<div>-' . $item->get_date() . '</div>';
 			
 				echo '</li>';
 			
@@ -113,9 +113,9 @@ class Feed extends Controller {
 			
 			echo '<li>';
 			
-			echo '<div><a href="' . $item->get_link() . '">';
+			echo '<div>';
 			echo $item->get_title(); 
-			echo '</a></div>';
+			echo '<a href="' . $item->get_link() . '">(more)</a></div>';
 			
 			echo '<div>' . $item->get_description() . '</div>';
 			
@@ -145,7 +145,7 @@ class Feed extends Controller {
 			echo $item->get_title(); 
 			echo '</a></div>';
 			
-			echo '<div>' . $item->get_date() . '</div>';
+			echo '<div>-' . $item->get_date() . '</div>';
 			
 			echo '</li>';
 			

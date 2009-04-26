@@ -7,8 +7,9 @@
 	<link rel="apple-touch-icon" href="/img/apple-touch-icon.png"/>
 	<link href="http://feeds.feedburner.com/StandardPixel" rel="alternate" type="application/rss+xml" title="StandardPixel RSS Feed" />
 	<title>StandardPixel.com - <?= $this->title ?></title>
-	<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.5.2/build/fonts/fonts-min.css">	
-	<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.5.2/build/reset/reset-min.css">
+	<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.7.0/build/fonts/fonts-min.css">	
+	<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.7.0/build/reset/reset-min.css">
+	<!--link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.7.0/build/base/base-min.css"-->
 	<style>
 		/* 
 		Millbahn Theme v0.0
@@ -17,6 +18,20 @@
 		*/
 		
 		/* Style */
+			/* Hand Picked YUI Base items */
+			p,
+			fieldset,
+			table,
+			pre {
+				/* So things don't run into each other. */
+				margin-bottom: 1em;
+			}
+
+			strong,dt {
+				/* Bringing boldness back to headers and the strong element. */
+				font-weight: bold;
+			}
+
 		
 			/* General */
 			.millbahn{font-family:helvetica; font-size:118%;}
@@ -24,6 +39,7 @@
 			.millbahn a:hover{color:#f00;}
 			.millbahn h1{font-size:435%;}
 			.millbahn h4{font-size:165%;color:#999;}
+			.millbahn img{width:100px;height:100px;float:left; margin:0 10px 10px 0; border:solid #aaa 1px;}
 			.millbahn .module{border:solid #eee 3px;}
 			.millbahn .module.col1{background:url('http://dev.s.standardpixel.com/i/col1_bg.png') right top repeat-y;}
 			.millbahn .module.col2{background:url('http://dev.s.standardpixel.com/i/col2_bg.png') left top repeat-y;}
