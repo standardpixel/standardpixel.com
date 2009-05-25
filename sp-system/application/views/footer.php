@@ -1,12 +1,9 @@
-		<div id="navigation" class="module col2">
+		<div id="navigation" class="module col2 sitenav">
 			<h3>Navigation</h3>
 			<ul>
-				<!--<li><a href="http://standardpixel.com/">Home</a></li>-->
-				<li><a href="http://standardpixel.com/EricGelinas-		WebInterfaceEngineer.php">About Eric</a></li>
-				<!--<li><a href="http://standardpixel.com/EricGelinas-		WebInterfaceEngineer.php">Resum&eacute;</a></li>-->
-				<li><a href="http://blog.standardpixel.com">Blog</a></li>
-				<!--<li><a href="/contact.php">Contact</a></li>-->
-				<li><a href="http://github.com/standardpixel/standarpixel.com/">Portfolio</a></li>
+				<li><a href="http://dev.standardpixel.com/EricGelinas-WebInterfaceEngineer.php">Resum&eacute;</a></li>
+				<li><a href="http://dev.blog.standardpixel.com/">Blog</a></li>
+				<li><a href="http://github.com/standardpixel/standarpixel.com/">Source</a></li>
 			</ul>
 		</div>
 		<div id="footer" class="module">
@@ -18,17 +15,8 @@
 			</div>
 		</div>
 	</div>
-	<!-- YAHOO Global Object source file --> 
-	<script type="text/javascript" src="http://yui.yahooapis.com/2.3.0/build/yahoo/yahoo-min.js" ></script>
-	<script src="http://yui.yahooapis.com/2.7.0/build/event/event-min.js"></script>
-	<script src="http://yui.yahooapis.com/2.7.0/build/connection/connection-min.js"></script>
-	<!-- Dependencies -->
-	<script src="http://yui.yahooapis.com/2.7.0/build/dom/dom-min.js"></script>
-
-	<script src="http://yui.yahooapis.com/2.7.0/build/selector/selector-min.js"></script>
 	
-	<!-- StaPx source file --> 
-	<script type="text/javascript" src="http://s.standardpixel.com/j/behavior.js" ></script>
+	<script type="text/javascript" src="http://dev.s.standardpixel.com/d/behavior.php" ></script>
 	
 	<? if( $this->input->post('showbasic') != true ){ ?>
 		<script>
@@ -64,7 +52,7 @@
 					//Get the lowest position
 					bottomPosition = Dom.getY( group ) + group.offsetHeight;
 					
-					console.log(offsetCount);
+					//console.log(offsetCount);
 					
 				} else {
 				

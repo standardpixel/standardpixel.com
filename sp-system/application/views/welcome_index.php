@@ -14,24 +14,24 @@
 			<div class="article module col1">
 				<h4>Recent work</h4>
 				<p>
-				<img src="http://dev.s.standardpixel.com/i/feature_sp.png" alt="StandardPixel.com design by Ernest Millan" title="StandardPixel.com design by Ernest Millan" align="left" /><strong>StandardPixel.com redesign</strong>
-					<ul>
+				<img src="http://dev.s.standardpixel.com/i/feature/feature_sp.png" alt="StandardPixel.com design by Ernest Millan" title="StandardPixel.com design by Ernest Millan" align="left" /><strong>StandardPixel.com redesign</strong>
+					<ul class="project">
 						<li><strong>Status: </strong> Launched</li>
 						<li><strong>Designer: </strong> <a href="http://millanwebdesign.com">Ernest Millan</a></li>
 						<li><strong>Crafted by: </strong>Eric Gelinas</li>
 					</ul>
 				</p>
 				<p>
-				<img src="http://dev.s.standardpixel.com/i/feature_sp.png" alt="StandardPixel.com design by Ernest Millan" title="StandardPixel.com design by Ernest Millan" align="left" /><strong>StandardPixel Blog redesign</strong>
-					<ul>
+				<img src="http://dev.s.standardpixel.com/i/feature/feature_sp.png" alt="StandardPixel.com design by Ernest Millan" title="StandardPixel.com design by Ernest Millan" align="left" /><strong>StandardPixel Blog redesign</strong>
+					<ul class="project">
 						<li><strong>Status: </strong> Design Approved</li>
 						<li><strong>Designer: </strong> <a href="http://millanwebdesign.com">Ernest Millan</a></li>
 						<li><strong>Crafted by: </strong>Eric Gelinas</li>
 					</ul>
 				</p>
 				<p>
-				<img src="http://dev.s.standardpixel.com/i/feature_cs.png" alt="Culturally Shallow design by Ernest Millan" title="Culturally Shallow design by Ernest Millan" align="left" /><strong>StandardPixel.com redesign</strong>
-					<ul>
+				<img src="http://dev.s.standardpixel.com/i/feature/feature_cs.png" alt="Culturally Shallow design by Ernest Millan" title="Culturally Shallow design by Ernest Millan" align="left" /><strong>StandardPixel.com redesign</strong>
+					<ul class="project">
 						<li><strong>Status: </strong> Design Apporved</li>
 						<li><strong>Designer: </strong> <a href="http://millanwebdesign.com">Ernest Millan</a></li>
 						<li><strong>Crafted by: </strong>Winnie Wong & Eric Gelinas</li>
