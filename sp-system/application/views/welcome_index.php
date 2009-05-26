@@ -5,18 +5,24 @@
 			</h1>
 			<h2>Web Application Development Blog</h2>
 		</div>
+		
 		<div id="content_1" class="area col1">
+		
 			<div class="article module col1">
 				<h4>StandardPixel LLC is...</h4>
 				<p> a side project of Front-End Engineer, <a href="http://standardpixel.com/EricGelinas-WebInterfaceEngineer.php">Eric Gelinas</a>. This site includes links to current projects and agile web development information. Please contact <a href="mailto:info@standardpixel.com">info@standardpixel.com</a> if you would like to know more.</p>
 			</div>
 			
 			<div class="article module col1 projects">
+			
 				<h4>Recent work</h4>
+				
 				<div class="project">
 					<p>
-						<img src="http://dev.s.standardpixel.com/i/feature/feature_sp.png" alt="StandardPixel.com design by Ernest Millan" title="StandardPixel.com design by Ernest Millan" align="left" />
-						<strong>StandardPixel.com redesign</strong>
+						<a href="http://github.com/standardpixel/standarpixel.com/tree/master">
+							<img src="http://dev.s.standardpixel.com/i/feature/feature_sp.png" alt="StandardPixel.com design by Ernest Millan" title="StandardPixel.com design by Ernest Millan" align="left" />
+							<strong>StandardPixel.com redesign</strong>
+						</a>
 					</p>
 					<ul class="list">
 						<li><strong>Status: </strong> Launched</li>
@@ -41,6 +47,20 @@
 
 				<div class="project">
 					<p>
+						<a href="http://github.com/standardpixel/NeedleCandy/tree/master">
+						<img src="http://dev.s.standardpixel.com/i/feature/feature_needlecandy.jpg" alt="StandardPixel.com design by Ernest Millan" title="StandardPixel.com design by Ernest Millan" align="left" />
+						<strong>NeedleCandy</strong>
+						</a>
+					</p>
+					<ul class="list">
+						<li><strong>Status: </strong>Concept</li>
+						<li><strong>Designer: </strong>Eric Gelinas</li>
+						<li><strong>Crafted by: </strong>Eric Gelinas</li>
+					</ul>
+				</div>
+
+				<div class="project">
+					<p>
 						<img src="http://dev.s.standardpixel.com/i/feature/feature_sp.png" alt="StandardPixel.com design by Ernest Millan" title="StandardPixel.com design by Ernest Millan" align="left" />
 						<strong>StandardPixel Blog redesign</strong>
 					</p>
@@ -53,6 +73,7 @@
 			</div>
 		
 		</div>
+		
 		<div id="content_2" class="module content col2 listGroup">
 			<h4>Reading List</h4>
 			<div class="attribute">from <a href="https://github.com/standardpixel">delicious.com</a></div>
