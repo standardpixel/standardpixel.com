@@ -11,32 +11,45 @@
 				<p> a side project of Front-End Engineer, <a href="http://standardpixel.com/EricGelinas-WebInterfaceEngineer.php">Eric Gelinas</a>. This site includes links to current projects and agile web development information. Please contact <a href="mailto:info@standardpixel.com">info@standardpixel.com</a> if you would like to know more.</p>
 			</div>
 			
-			<div class="article module col1">
+			<div class="article module col1 projects">
 				<h4>Recent work</h4>
-				<p>
-				<img src="http://dev.s.standardpixel.com/i/feature/feature_sp.png" alt="StandardPixel.com design by Ernest Millan" title="StandardPixel.com design by Ernest Millan" align="left" /><strong>StandardPixel.com redesign</strong>
-					<ul class="project">
+				<div class="project">
+					<p>
+						<img src="http://dev.s.standardpixel.com/i/feature/feature_sp.png" alt="StandardPixel.com design by Ernest Millan" title="StandardPixel.com design by Ernest Millan" align="left" />
+						<strong>StandardPixel.com redesign</strong>
+					</p>
+					<ul class="list">
 						<li><strong>Status: </strong> Launched</li>
 						<li><strong>Designer: </strong> <a href="http://millanwebdesign.com">Ernest Millan</a></li>
 						<li><strong>Crafted by: </strong>Eric Gelinas</li>
 					</ul>
-				</p>
-				<p>
-				<img src="http://dev.s.standardpixel.com/i/feature/feature_sp.png" alt="StandardPixel.com design by Ernest Millan" title="StandardPixel.com design by Ernest Millan" align="left" /><strong>StandardPixel Blog redesign</strong>
-					<ul class="project">
+				</div>
+
+				<div class="project">
+					<p>
+						<a href="http://dev.s.standardpixel.com/j/yui2/sandbox/expandablerows/expandablerows.html">
+						<img src="http://dev.s.standardpixel.com/i/feature/feature_expandrow.png" alt="StandardPixel.com design by Ernest Millan" title="StandardPixel.com design by Ernest Millan" align="left" />
+						<strong>Expandable Rows feature for the YUI Table</strong>
+						</a>
+					</p>
+					<ul class="list">
+						<li><strong>Status: </strong> Code Review</li>
+						<li><strong>Designer: </strong> Yahoo! User Experience Design</li>
+						<li><strong>Crafted by: </strong>Eric Gelinas</li>
+					</ul>
+				</div>
+
+				<div class="project">
+					<p>
+						<img src="http://dev.s.standardpixel.com/i/feature/feature_sp.png" alt="StandardPixel.com design by Ernest Millan" title="StandardPixel.com design by Ernest Millan" align="left" />
+						<strong>StandardPixel Blog redesign</strong>
+					</p>
+					<ul class="list">
 						<li><strong>Status: </strong> Design Approved</li>
 						<li><strong>Designer: </strong> <a href="http://millanwebdesign.com">Ernest Millan</a></li>
 						<li><strong>Crafted by: </strong>Eric Gelinas</li>
 					</ul>
-				</p>
-				<p>
-				<img src="http://dev.s.standardpixel.com/i/feature/feature_cs.png" alt="Culturally Shallow design by Ernest Millan" title="Culturally Shallow design by Ernest Millan" align="left" /><strong>StandardPixel.com redesign</strong>
-					<ul class="project">
-						<li><strong>Status: </strong> Design Apporved</li>
-						<li><strong>Designer: </strong> <a href="http://millanwebdesign.com">Ernest Millan</a></li>
-						<li><strong>Crafted by: </strong>Winnie Wong & Eric Gelinas</li>
-					</ul>
-				</p>
+				</div>
 			</div>
 		
 		</div>
