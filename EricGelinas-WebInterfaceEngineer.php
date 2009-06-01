@@ -3,11 +3,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-	<link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
-	<link rel="apple-touch-icon" href="/img/apple-touch-icon.png"/>
+	<link rel="shortcut icon" href="http://s.standardpixel.com/090531_3_2_0/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="http://s.standardpixel.com/090531_3_2_0/apple-touch-icon.png"/>
 	<link href="http://feeds.feedburner.com/StandardPixel" rel="alternate" type="application/rss+xml" title="StandardPixel RSS Feed" />
 	<title>StandardPixel.com - Web Development Services</title>
-	<link rel="stylesheet" type="text/css" href="http://dev.s.standardpixel.com/d/style.php">
+	<link rel="stylesheet" type="text/css" href="http://s.standardpixel.com/090531_3_2_0/style.css">
 </head>
 
 <body>	<div id="container" class="stapix millbahn elastic">
@@ -114,7 +114,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="http://dev.s.standardpixel.com/d/behavior.php"></script>
+	<script src="http://s.standardpixel.com/090531_3_2_0/behavior.js"></script>
 	
 	</body>
 </html>
