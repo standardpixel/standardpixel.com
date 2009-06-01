@@ -16,7 +16,7 @@
 		</div>
 	</div>
 	
-	<script type="text/javascript" src="http://s.standardpixel.com/090531_3_2_0/behavior.js" ></script>
+	<script type="text/javascript" src="http://s.standardpixel.com/d/behavior.php" ></script>
 	
 	<? if( $this->input->post('showbasic') != true ){ ?>
 		<script type="text/javascript">
