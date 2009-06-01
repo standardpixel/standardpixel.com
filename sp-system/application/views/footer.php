@@ -16,10 +16,10 @@
 		</div>
 	</div>
 	
-	<script type="text/javascript" src="http://dev.s.standardpixel.com/d/behavior.php" ></script>
+	<script type="text/javascript" src="http://s.standardpixel.com/d/behavior.php" ></script>
 	
 	<? if( $this->input->post('showbasic') != true ){ ?>
-		<script>
+		<script type="text/javascript">
 		
 			var SELECTOR = YAHOO.util.Selector,
 				Dom = YAHOO.util.Dom;
@@ -27,6 +27,7 @@
 		
 		stapix.getAsyncMarkup(document.getElementById('feed_friendfeed_content'),'index.php/feed/friendfeed');
 		
+		<? /*
 		window.listShrinkafier = function(){	
 			var group = SELECTOR.query('.listGroup')[0],
 				lists = SELECTOR.query('.listGroup .list'),
@@ -61,7 +62,6 @@
 				}
 				
 				if( viewHeight < bottomPosition ){
-					/*
 					while( viewHeight < bottomPosition ){
 						
 						console.log( bottomPosition -= 1 );
@@ -69,13 +69,12 @@
 						bottomPosition = Dom.getY( group ) + group.offsetHeight;
 						
 					}
-					*/
 				
 				}
 			
 			}
 		}
-			
+			*/?>
 		</script>
 	<? } ?>
 </body>

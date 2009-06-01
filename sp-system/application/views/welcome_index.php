@@ -20,7 +20,7 @@
 				<div class="project">
 					<p>
 						<a href="http://github.com/standardpixel/standarpixel.com/tree/master">
-							<img src="http://dev.s.standardpixel.com/i/feature/feature_sp.png" alt="StandardPixel.com design by Ernest Millan" title="StandardPixel.com design by Ernest Millan" align="left" />
+							<img src="http://s.standardpixel.com/090531_2_2_0/feature_sp.png" alt="StandardPixel.com design by Ernest Millan" title="StandardPixel.com design by Ernest Millan" />
 							<strong>StandardPixel.com redesign</strong>
 						</a>
 					</p>
@@ -34,7 +34,7 @@
 				<div class="project">
 					<p>
 						<a href="http://dev.s.standardpixel.com/j/yui2/sandbox/expandablerows/expandablerows.html">
-						<img src="http://dev.s.standardpixel.com/i/feature/feature_expandrow.png" alt="StandardPixel.com design by Ernest Millan" title="StandardPixel.com design by Ernest Millan" align="left" />
+						<img src="http://s.standardpixel.com/090531_2_2_0/feature_expandrow.png" alt="StandardPixel.com design by Ernest Millan" title="StandardPixel.com design by Ernest Millan"/>
 						<strong>Expandable Rows feature for the YUI Table</strong>
 						</a>
 					</p>
@@ -48,7 +48,7 @@
 				<div class="project">
 					<p>
 						<a href="http://github.com/standardpixel/NeedleCandy/tree/master">
-						<img src="http://dev.s.standardpixel.com/i/feature/feature_needlecandy.jpg" alt="StandardPixel.com design by Ernest Millan" title="StandardPixel.com design by Ernest Millan" align="left" />
+						<img src="http://s.standardpixel.com/090531_2_2_0/feature_needlecandy.jpg" alt="StandardPixel.com design by Ernest Millan" title="StandardPixel.com design by Ernest Millan"/>
 						<strong>NeedleCandy</strong>
 						</a>
 					</p>
@@ -61,7 +61,7 @@
 
 				<div class="project">
 					<p>
-						<img src="http://dev.s.standardpixel.com/i/feature/feature_sp.png" alt="StandardPixel.com design by Ernest Millan" title="StandardPixel.com design by Ernest Millan" align="left" />
+						<img src="http://s.standardpixel.com/090531_2_2_0/feature_sp.png" alt="StandardPixel.com design by Ernest Millan" title="StandardPixel.com design by Ernest Millan"/>
 						<strong>StandardPixel Blog redesign</strong>
 					</p>
 					<ul class="list">
@@ -80,8 +80,10 @@
 			<div id="feed_deliciousArticle_content" class="list">
 				<? if( $this->input->post('showbasic') != true ){ ?>
 					<form action="./" method="post">
-						<input type="hidden" name="showbasic" value="true">
-						<button>See more content</button>
+						<fieldset>
+							<input type="hidden" name="showbasic" value="true" />
+							<button>See more content</button>
+						</fieldset>
 					</form>
 				<? } else { ?>
 					<?php $this->getremotecontent->deliciousArticle(); ?>
@@ -91,8 +93,10 @@
 			<div id="feed_friendfeed_content" class="list">
 				<? if( $this->input->post('showbasic') != true ){ ?>
 					<form action="./" method="post">
-						<input type="hidden" name="showbasic" value="true">
-						<button>See more content</button>
+						<fieldset>
+							<input type="hidden" name="showbasic" value="true" />
+							<button>See more content</button>
+						</fieldset>
 					</form>
 				<? } else { ?>
 					<?php $this->getremotecontent->friendfeed(); ?>
