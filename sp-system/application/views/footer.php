@@ -1,8 +1,8 @@
 		<div id="navigation" class="module col2 sitenav">
 			<h3>Navigation</h3>
 			<ul>
-				<li><a href="http://dev.standardpixel.com/EricGelinas-WebInterfaceEngineer.php">Resum&eacute;</a></li>
-				<li><a href="http://dev.blog.standardpixel.com/">Blog</a></li>
+				<li><a href="http://standardpixel.com/EricGelinas-WebInterfaceEngineer.php">Resum&eacute;</a></li>
+				<li><a href="http://blog.standardpixel.com/">Blog</a></li>
 				<li><a href="http://github.com/standardpixel/standarpixel.com/">Source</a></li>
 			</ul>
 		</div>
@@ -16,7 +16,7 @@
 		</div>
 	</div>
 	
-	<script type="text/javascript" src="http://cdn.standardpixel.com/090531_4_2_0/behavior.js" ></script>
+	<script type="text/javascript" src="http://cdn.standardpixel.com/090607_0_2_0/behavior.js" ></script>
 	
 	<? if( $this->input->post('showbasic') != true ){ ?>
 		<script type="text/javascript">

@@ -20,7 +20,7 @@
 				<div class="project">
 					<p>
 						<a href="http://github.com/standardpixel/standarpixel.com/tree/master">
-							<img src="http://cdn.standardpixel.com/090531_4_2_0/feature_sp.png" alt="StandardPixel.com design by Ernest Millan" title="StandardPixel.com design by Ernest Millan" />
+							<img src="http://cdn.standardpixel.com/090607_0_2_0/feature_sp.png" alt="StandardPixel.com design by Ernest Millan" title="StandardPixel.com design by Ernest Millan" />
 							<strong>StandardPixel.com redesign</strong>
 						</a>
 					</p>
@@ -34,7 +34,7 @@
 				<div class="project">
 					<p>
 						<a href="http://dev.s.standardpixel.com/j/yui2/sandbox/expandablerows/expandablerows.html">
-						<img src="http://cdn.standardpixel.com/090531_4_2_0/feature_expandrow.png" alt="StandardPixel.com design by Ernest Millan" title="StandardPixel.com design by Ernest Millan"/>
+						<img src="http://cdn.standardpixel.com/090607_0_2_0/feature_expandrow.png" alt="StandardPixel.com design by Ernest Millan" title="StandardPixel.com design by Ernest Millan"/>
 						<strong>Expandable Rows feature for the YUI Table</strong>
 						</a>
 					</p>
@@ -48,7 +48,7 @@
 				<div class="project">
 					<p>
 						<a href="http://github.com/standardpixel/NeedleCandy/tree/master">
-						<img src="http://cdn.standardpixel.com/090531_4_2_0/feature_needlecandy.jpg" alt="StandardPixel.com design by Ernest Millan" title="StandardPixel.com design by Ernest Millan"/>
+						<img src="http://cdn.standardpixel.com/090607_0_2_0/feature_needlecandy.jpg" alt="StandardPixel.com design by Ernest Millan" title="StandardPixel.com design by Ernest Millan"/>
 						<strong>NeedleCandy</strong>
 						</a>
 					</p>
@@ -61,7 +61,7 @@
 
 				<div class="project">
 					<p>
-						<img src="http://cdn.standardpixel.com/090531_4_2_0/feature_sp.png" alt="StandardPixel.com design by Ernest Millan" title="StandardPixel.com design by Ernest Millan"/>
+						<img src="http://cdn.standardpixel.com/090607_0_2_0/feature_sp.png" alt="StandardPixel.com design by Ernest Millan" title="StandardPixel.com design by Ernest Millan"/>
 						<strong>StandardPixel Blog redesign</strong>
 					</p>
 					<ul class="list">
