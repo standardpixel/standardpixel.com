@@ -21,11 +21,14 @@
 	<? if( $this->input->post('showbasic') != true ){ ?>
 		<script type="text/javascript">
 		
-			var SELECTOR = YAHOO.util.Selector,
-				Dom = YAHOO.util.Dom;
-		stapix.getAsyncMarkup(document.getElementById('feed_deliciousArticle_content'),'index.php/feed/deliciousArticle');
+			var SELECTOR   = YAHOO.util.Selector,
+			    Dom        = YAHOO.util.Dom;
+			
+			
 		
-		stapix.getAsyncMarkup(document.getElementById('feed_friendfeed_content'),'index.php/feed/friendfeed');
+			stapix.getAsyncMarkup(document.getElementById('feed_deliciousArticle_content'),'index.php/feed/deliciousArticle');
+		
+			stapix.getAsyncMarkup(document.getElementById('feed_friendfeed_content'),'index.php/feed/friendfeed');
 		
 		<? /*
 		window.listShrinkafier = function(){	
