@@ -11,7 +11,7 @@
 |	http://example.com/
 |
 */
-$config['base_url']	= "http://example.com/";
+$config['base_url']	= "http://standardpixel.com/";
 
 /*
 |--------------------------------------------------------------------------
@@ -324,6 +324,21 @@ $config['rewrite_short_tags'] = FALSE;
 */
 $config['proxy_ips'] = '';
 
+
+/*
+|--------------------------------------------------------------------------
+| StandardPixel Environment
+|--------------------------------------------------------------------------
+|
+*/
+$config['sp']['environment']                   = 'dev';
+//$config['sp']['environment']                   = 'prod';
+
+$config['sp']['version']                       = '090607_0_2_0';
+$config['sp']['filenames']['style']['prod']    = 'style.css';
+$config['sp']['filenames']['style']['dev']     = 'style.php';
+$config['sp']['filenames']['behavior']['prod'] = 'behavior.js';
+$config['sp']['filenames']['behavior']['dev']  = 'behavior.php';
 
 /* End of file config.php */
 /* Location: ./system/application/config/config.php */

@@ -16,7 +16,7 @@
 		</div>
 	</div>
 	
-	<script type="text/javascript" src="http://cdn.standardpixel.com/090607_0_2_0/behavior.js" ></script>
+	<script type="text/javascript" src="<?=$this->sp_media_path;?><?=$this->sp_config['filenames']['behavior'][$this->sp_config['environment']];?>" ></script>
 	
 	<? if( $this->input->post('showbasic') != true ){ ?>
 		<script type="text/javascript">

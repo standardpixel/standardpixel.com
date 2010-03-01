@@ -8,19 +8,14 @@
 		
 		<div id="content_1" class="area col1">
 		
-			<div class="article module col1">
-				<h4>StandardPixel LLC is...</h4>
-				<p> a side project of Front-End Engineer, <a href="http://standardpixel.com/EricGelinas-WebInterfaceEngineer.php">Eric Gelinas</a>. This site includes links to current projects and agile web development information. Please contact <a href="mailto:info@standardpixel.com">info@standardpixel.com</a> if you would like to know more.</p>
-			</div>
-			
 			<div class="article module col1 projects">
 			
-				<h4>Recent work</h4>
+				<h4>TMI about Eric Gelinas</h4>
 				
 				<div class="project">
 					<p>
 						<a href="http://github.com/standardpixel/standarpixel.com/tree/master">
-							<img src="http://cdn.standardpixel.com/090607_0_2_0/feature_sp.png" alt="StandardPixel.com design by Ernest Millan" title="StandardPixel.com design by Ernest Millan" />
+							<img src="<?=$this->sp_media_path;?>feature_sp.png" alt="StandardPixel.com design by Ernest Millan" title="StandardPixel.com design by Ernest Millan" />
 							<strong>StandardPixel.com redesign</strong>
 						</a>
 					</p>
@@ -34,7 +29,7 @@
 				<div class="project">
 					<p>
 						<a href="http://dev.s.standardpixel.com/j/yui2/sandbox/expandablerows/expandablerows.html">
-						<img src="http://cdn.standardpixel.com/090607_0_2_0/feature_expandrow.png" alt="StandardPixel.com design by Ernest Millan" title="StandardPixel.com design by Ernest Millan"/>
+						<img src="<?=$this->sp_media_path;?>feature_expandrow.png" alt="StandardPixel.com design by Ernest Millan" title="StandardPixel.com design by Ernest Millan"/>
 						<strong>Expandable Rows feature for the YUI Table</strong>
 						</a>
 					</p>
@@ -48,7 +43,7 @@
 				<div class="project">
 					<p>
 						<a href="http://github.com/standardpixel/NeedleCandy/tree/master">
-						<img src="http://cdn.standardpixel.com/090607_0_2_0/feature_needlecandy.jpg" alt="StandardPixel.com design by Ernest Millan" title="StandardPixel.com design by Ernest Millan"/>
+						<img src="<?=$this->sp_media_path;?>feature_needlecandy.jpg" alt="StandardPixel.com design by Ernest Millan" title="StandardPixel.com design by Ernest Millan"/>
 						<strong>NeedleCandy</strong>
 						</a>
 					</p>
@@ -61,7 +56,7 @@
 
 				<div class="project">
 					<p>
-						<img src="http://cdn.standardpixel.com/090607_0_2_0/feature_sp.png" alt="StandardPixel.com design by Ernest Millan" title="StandardPixel.com design by Ernest Millan"/>
+						<img src="<?=$this->sp_media_path;?>feature_sp.png" alt="StandardPixel.com design by Ernest Millan" title="StandardPixel.com design by Ernest Millan"/>
 						<strong>StandardPixel Blog redesign</strong>
 					</p>
 					<ul class="list">
