@@ -10,10 +10,10 @@
 	<link rel="stylesheet" type="text/css" href="<?=$this->sp_media_path;?><?=$this->sp_config['filenames']['style'][$this->sp_config['environment']];?>" />
 </head>
 
-<body>
+<body class="<? echo 'sp_' . $this->sp_config['environment']; ?>">
 
 <? if( !$this->sp_is_production ) { ?>
-<textarea style="height:5px;width:15px;position:absolute;top:0;left:0;background-color:#fff;z-index:100;">
+<textarea id="dev_output">
 Backend Debug Output
 ---------------------------------------
 
