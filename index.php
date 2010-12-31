@@ -3,27 +3,42 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-		<title>StandardPixel.com - Things which interest Eric Gelinas</title>
+		<title>StandardPixel.com - The work and curations of Eric Gelinas</title>
 		<meta name="description" content="">
 		<meta name="author" content="">
 
 		<meta name="viewport" content="width=device-width, initial-scale=0.9">
-		                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+		       
+		<script type="text/javascript" src="http://use.typekit.com/tkt0mro.js"></script>
+		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+		                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
 		<style>
 			html, body {
 				background-color:#343B4F;
-				font-family:"museo-sans-1", "museo-sans-2", helvetica, arial sans-serif;
+				font-family:helvetica, arial sans-serif;
 				font-size:12px;
+				font-weight:normal;
 			}
+			
+			.narcissistic a, .narcissistic a:visited {color:#3300fb;text-decoration:none;}
+			
+			.narcissistic a:hover {text-shadow: #3300fb 0 0 1px;}
 			
 			.narcissistic h1, .narcissistic h2 {
 				color:#6CDFEA;
 				font-size:44px;
 				font-weight:300;
+				margin:0;
+				padding:0;
+				font-family:"museo-sans-1", "museo-sans-2", helvetica, arial sans-serif;
+			}
+			
+			.narcissistic p {
+				margin:0;
 			}
 			
 			.narcissistic .logo{
-				font-weight:12px;
+				font-size:50px;
 				font-family:helvetica, arial sans-serif;
 				font-weight:500;
 			} 
@@ -32,7 +47,7 @@
 			.narcissistic .logo .com{color:#aaa;}
 			
 			.narcissistic #container {
-				width:1024px;
+				width:1023px;
 				margin:0 auto;
 			}
 			
@@ -50,7 +65,11 @@
 			}
 			
 			.narcissistic footer p {
-				font-size:25px;
+				margin:0px;
+				margin-top:11px;
+				font-family:"museo-sans-1", "museo-sans-2", helvetica, arial sans-serif;
+				font-size:12px;
+				font-weight:normal;
 			}
 			
 			.narcissistic footer div.socialshit {
@@ -60,11 +79,11 @@
 			.narcissistic #main {
 				background-color:#FFF;
 				margin-top:20px;
-				padding:5px 10px;
+				padding:6px 11px;
 				-moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px;
 				-moz-box-shadow: black 0 0 3em; -webkit-box-shadow: black 0 0 3em; box-shadow: black 0 0 3em;
 				position:relative;
-				height:385px;
+				height:388px;
 			}
 			
 			.narcissistic #main h3 {
@@ -74,21 +93,59 @@
 			
 			.narcissistic #main #main-image {
 				position:absolute;
-				top:10px;
-				left:10px;
+				top:11px;
+				left:11px;
+				width:495px;
+				height:378px;
+				background-color:#0E0E2F;
+				overflow:hidden;
+				
+			}
+			
+			.narcissistic #main #main-image img {
+				margin:auto;
 			}
 			
 			.narcissistic #main #main-content {
-				margin-left:510px;
-				font-weight:700;
-				font-size:12px;
+				margin-left:506px;
+			}
+			
+			.narcissistic #main .photo-description {
+				margin-top:2px;
+				line-height:17px;
+			}
+			
+			.narcissistic #main .service-logo {
+				position:absolute; bottom:9px;
+			}
+			
+			.narcissistic #main .service-credit {
+				position:absolute;bottom:17px;left:546px;
+			}
+			
+			.narcissistic #main .advance-button {
+				display:none;
+			}
+			
+			.narcissistic #main:hover .advance-button {
+				color:#eee;
+				display:block;
+				position:absolute;bottom:6px;right:11px;
+				font-weight:bolder;font-size:20px;font-family:helvetica, arial sans-serif;
+				text-shadow: #0E0E2F 0 0 3px;
+			}
+			
+			.narcissistic #main:hover .advance-button:hover {
+				text-shadow: blue 0 0 3px;
+				cursor: pointer;
+				cursor: hand;
 			}
 			
 			/* colours */
 			html, body {background-color:#F2F4F2;}
-			.narcissistic h1, .narcissistic h2 {color:#0E0E2F;}
-			.narcissistic header {color:#0E0E2F;}
-			.narcissistic footer {color:#0E0E2F;}
+			.narcissistic h1, .narcissistic h2 {color:#0E0E2F !important;}
+			.narcissistic header {color:#0E0E2F !important;}
+			.narcissistic footer {color:#0E0E2F !important;}
 			.narcissistic #main {background-color:#FFF;}
 			
 		</style>
@@ -99,7 +156,7 @@
 
 		<div id="container">
 			<header>
-				<h1>Hello, I am Eric Gelinas and recently I...</h1>
+				<h1>One extraordinary thing:</h1>
 			</header>
 
 			<div id="main">
@@ -107,30 +164,26 @@
 					<img src="http://farm5.static.flickr.com/4092/5124639215_4d2f5ff999.jpg">
 				</div>
 				<div id="main-content" class="service-flickr action-favorite">
-					<h3 style="color:#ff0083;">&#9733; Favorited</h3>
-					<hr>
-					<div class="photo-title" style="font-size:24px;">Bla Bla Bla Bla</div>
-					<div class="photo-title" style="font-size:11px;">
+					<p class="photo-title" style="font-size:24px;"><a href="#">Bla Bla Bla Bla</a></p>
+					<p class="photo-description">
 						Lorizzle ipsizzle dolor sit black, yo mamma adipiscing elit. Mofo sapizzle velizzle, aliquet volutpizzle, suscipit mofo, mammasay mammasa mamma oo sa vizzle, arcu. Pellentesque brizzle dang. Sizzle erizzle. Pimpin' at funky fresh its fo rizzle turpis tempizzle the bizzle. Maurizzle pellentesque get down get down sheezy turpizzle. Vestibulum izzle tortor. Pellentesque brizzle rhoncus crackalackin. In hac dawg platea dictumst. I saw beyonces tizzles and my pizzle went crizzle dapibizzle. Black tellus urna, izzle dope, doggy rizzle, eleifend da bomb, nunc. Get down get down suscipizzle. Integizzle semper sure sed yo.
-					</div>
-					<div class="photo-credit" style="font-size:24px;">by Some Jackass</div>
-					<div><a href="http://flickr.com/standardpixel"><img src="/img/flickr.png" alt="Flickr" align="middle"></a> on flickr</div>
+					</p>
+					<p class="photo-credit">by Some Jackass</p>
+					
+					<div class="service-logo"><a href="http://flickr.com/standardpixel"><img src="/img/flickr.png" alt="Flickr"></a></div>
+					<p class="service-credit"><a href="http://flickr.com/standardpixel/favorites">I Favorited this photo on flickr</a></p>
+					<div class="advance-button" title="Show something else...">↻</div>
 				</div>
 			</div>
 
 			<footer>
-				<h2 class="logo"><span class="standard">standard</span><span class="pixel">pixel</span><span class="com">.com</span></h2>
-				<p>Resumé • Blog • Source</p>
-				<div class="socialshit">
-					<a href="http://www.delicious.com/standardpixel"><img src="/img/delicious.png" alt="Delicous Bookmarks"></a>
-					<a href="http://blog.standardpixel.com"><img src="/img/feed.png" alt="RSS Feed for the StandardPixel Blog"></a>
-					<a href="http://flickr.com/standardpixel"><img src="/img/flickr.png" alt="Flickr"></a>
-					<a href="http://friendfeed.com/standardpixel"><img src="/img/friendfeed.png" alt="FriendFeed"></a>
-					<a href="http://www.google.com/reader/shared/gelinasev"><img src="/img/google.png" alt="Google Reader"></a>
-					<a href="http://www.last.fm/user/dropinastorm"><img src="/img/lastfm.png" alt="LastFm's Audio Scrobbler"></a>
-					<a href="http://twitter.com/standardpixel"><img src="/img/twitter.png" alt="Twitter"></a>
-					<a href="http://standardpixel.yelp.com/"><img src="/img/yelp.png" alt="Yelp Reviews"></a>
-				</div>
+				<div class="logo"><span class="standard">standard</span><span class="pixel">pixel</span><span class="com">.com</span></div>
+				<p>Designed and developed by Eric Gelinas</p>
+				<p>
+					<a href="#">Resumé</a>&nbsp;•&nbsp;
+					<a href="#">Blog</a>&nbsp;•&nbsp;
+					<a href="#">Source</a>
+				</p>
 			</footer>
 		</div>
 
