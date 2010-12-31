@@ -20,11 +20,11 @@
 				font-weight:normal;
 			}
 			
-			.narcissistic a, .narcissistic a:visited {color:#3300fb;text-decoration:none;}
+			.extraordinary a, .extraordinary a:visited {color:#3300fb;text-decoration:none;}
 			
-			.narcissistic a:hover {text-shadow: #3300fb 0 0 1px;}
+			.extraordinary a:hover {text-shadow: #3300fb 0 0 1px;}
 			
-			.narcissistic h1, .narcissistic h2 {
+			.extraordinary h1, .extraordinary h2 {
 				color:#6CDFEA;
 				font-size:44px;
 				font-weight:300;
@@ -33,38 +33,38 @@
 				font-family:"museo-sans-1", "museo-sans-2", helvetica, arial sans-serif;
 			}
 			
-			.narcissistic p {
+			.extraordinary p {
 				margin:0;
 			}
 			
-			.narcissistic .logo{
+			.extraordinary .logo{
 				font-size:50px;
 				font-family:helvetica, arial sans-serif;
 				font-weight:500;
 			} 
-			.narcissistic .logo .standard{color:#b00;}
-			.narcissistic .logo .pixel{color:#000;}
-			.narcissistic .logo .com{color:#aaa;}
+			.extraordinary .logo .standard{color:#b00;}
+			.extraordinary .logo .pixel{color:#000;}
+			.extraordinary .logo .com{color:#aaa;}
 			
-			.narcissistic #container {
+			.extraordinary #container {
 				width:1023px;
 				margin:0 auto;
 			}
 			
-			.narcissistic header {
+			.extraordinary header {
 				color:#6CDFEA;
 				margin-top:20px;
 				//text-shadow: black 0 0 .5em;
 			}
 			
-			.narcissistic footer {
+			.extraordinary footer {
 				color:#6CDFEA;
 				margin-top:20px;
 				text-align:right;
 				//text-shadow: black 0 0 .5em;
 			}
 			
-			.narcissistic footer p {
+			.extraordinary footer p {
 				margin:0px;
 				margin-top:11px;
 				font-family:"museo-sans-1", "museo-sans-2", helvetica, arial sans-serif;
@@ -72,11 +72,11 @@
 				font-weight:normal;
 			}
 			
-			.narcissistic footer div.socialshit {
+			.extraordinary footer div.socialshit {
 				margin-top:15px;
 			}
 			
-			.narcissistic #main {
+			.extraordinary #main {
 				background-color:#FFF;
 				margin-top:20px;
 				padding:6px 11px;
@@ -86,12 +86,12 @@
 				height:388px;
 			}
 			
-			.narcissistic #main h3 {
+			.extraordinary #main h3 {
 				font-size:24px;
 				font-weight:300;
 			}
 			
-			.narcissistic #main #main-image {
+			.extraordinary #main #main-image {
 				position:absolute;
 				top:11px;
 				left:11px;
@@ -102,41 +102,41 @@
 				
 			}
 			
-			.narcissistic #main #main-image img {
+			.extraordinary #main #main-image img {
 				margin:auto;
 			}
 			
-			.narcissistic #main #main-content {
+			.extraordinary #main #main-content {
 				margin-left:506px;
 			}
 			
-			.narcissistic #main .photo-title {
+			.extraordinary #main .photo-title {
 				text-weight:bolder;
 			}
 			
-			.narcissistic #main .photo-description {
+			.extraordinary #main .photo-description {
 				margin-top:2px;
 				line-height:17px;
 			}
 			
-			.narcissistic #main .photo-credit {
+			.extraordinary #main .photo-credit {
 				font-weight:bolder;
 				margin-top:5px;
 			}
 			
-			.narcissistic #main .service-logo {
+			.extraordinary #main .service-logo {
 				position:absolute; bottom:9px;
 			}
 			
-			.narcissistic #main .service-credit {
+			.extraordinary #main .service-credit {
 				position:absolute;bottom:17px;left:546px;
 			}
 			
-			.narcissistic #main .advance-button {
+			.extraordinary #main .advance-button {
 				display:none;
 			}
 			
-			.narcissistic #main:hover .advance-button {
+			.extraordinary #main:hover .advance-button {
 				color:#eee;
 				display:block;
 				position:absolute;bottom:6px;right:11px;
@@ -144,7 +144,7 @@
 				text-shadow: #0E0E2F 0 0 3px;
 			}
 			
-			.narcissistic #main:hover .advance-button:hover {
+			.extraordinary #main:hover .advance-button:hover {
 				text-shadow: blue 0 0 3px;
 				cursor: pointer;
 				cursor: hand;
@@ -152,16 +152,16 @@
 			
 			/* colours */
 			html, body {background-color:#F2F4F2;}
-			.narcissistic h1, .narcissistic h2 {color:#0E0E2F !important;}
-			.narcissistic header {color:#0E0E2F !important;}
-			.narcissistic footer {color:#0E0E2F !important;}
-			.narcissistic #main {background-color:#FFF;}
+			.extraordinary h1, .extraordinary h2 {color:#0E0E2F}
+			.extraordinary header {color:#0E0E2F}
+			.extraordinary footer {color:#0E0E2F}
+			.extraordinary #main {background-color:#FFF;}
 			
 		</style>
 		
 	</head>
 
-	<body class="narcissistic">
+	<body class="extraordinary">
 
 		<div id="container">
 			<header>
