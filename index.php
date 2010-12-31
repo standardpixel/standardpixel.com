@@ -14,18 +14,14 @@
 		                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
 		<style>
 			html, body {
-				background-color:#343B4F;
 				font-family:helvetica, arial sans-serif;
 				font-size:12px;
 				font-weight:normal;
 			}
 			
-			.extraordinary a, .extraordinary a:visited {color:#3300fb;text-decoration:none;}
-			
-			.extraordinary a:hover {text-shadow: #3300fb 0 0 1px;}
+			.extraordinary a, .extraordinary a:visited {text-decoration:none;}
 			
 			.extraordinary h1, .extraordinary h2 {
-				color:#6CDFEA;
 				font-size:44px;
 				font-weight:300;
 				margin:0;
@@ -52,13 +48,11 @@
 			}
 			
 			.extraordinary header {
-				color:#6CDFEA;
 				margin-top:20px;
 				//text-shadow: black 0 0 .5em;
 			}
 			
 			.extraordinary footer {
-				color:#6CDFEA;
 				margin-top:20px;
 				text-align:right;
 				//text-shadow: black 0 0 .5em;
@@ -77,11 +71,9 @@
 			}
 			
 			.extraordinary #main {
-				background-color:#FFF;
 				margin-top:20px;
 				padding:6px 11px;
 				-moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px;
-				-moz-box-shadow: black 0 0 3em; -webkit-box-shadow: black 0 0 3em; box-shadow: black 0 0 3em;
 				position:relative;
 				height:388px;
 			}
@@ -97,7 +89,6 @@
 				left:11px;
 				width:495px;
 				height:378px;
-				background-color:#0E0E2F;
 				overflow:hidden;
 				
 			}
@@ -137,31 +128,32 @@
 			}
 			
 			.extraordinary #main:hover .advance-button {
-				color:#eee;
 				display:block;
 				position:absolute;bottom:6px;right:11px;
 				font-weight:bolder;font-size:20px;font-family:helvetica, arial sans-serif;
-				text-shadow: #0E0E2F 0 0 3px;
 			}
 			
 			.extraordinary #main:hover .advance-button:hover {
-				text-shadow: blue 0 0 3px;
 				cursor: pointer;
 				cursor: hand;
 			}
 			
 			/* colours */
-			html, body {background-color:#F2F4F2;}
-			.extraordinary h1, .extraordinary h2 {color:#0E0E2F}
-			.extraordinary header {color:#0E0E2F}
-			.extraordinary footer {color:#0E0E2F}
-			.extraordinary #main {background-color:#FFF;}
+			html, body.winter {background-color:#F2F4F2;}
+			.winter h1, .winter h2 {color:#0E0E2F}
+			.winter a:hover {text-shadow: #3300fb 0 0 1px;}
+			.winter header {color:#0E0E2F}
+			.winter footer {color:#0E0E2F}
+			.winter #main {-moz-box-shadow: black 0 0 3em; -webkit-box-shadow: black 0 0 3em; box-shadow: black 0 0 3em;}
+			.winter #main {background-color:#FFF;}
+			.winter #main:hover .advance-button {text-shadow: #0E0E2F 0 0 3px;color:#eee;}
+			.winter #main:hover .advance-button:hover {text-shadow: blue 0 0 3px;}
 			
 		</style>
 		
 	</head>
 
-	<body class="extraordinary">
+	<body class="extraordinary winter">
 
 		<div id="container">
 			<header>
