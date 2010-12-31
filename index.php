@@ -110,9 +110,18 @@
 				margin-left:506px;
 			}
 			
+			.narcissistic #main .photo-title {
+				text-weight:bolder;
+			}
+			
 			.narcissistic #main .photo-description {
 				margin-top:2px;
 				line-height:17px;
+			}
+			
+			.narcissistic #main .photo-credit {
+				font-weight:bolder;
+				margin-top:5px;
 			}
 			
 			.narcissistic #main .service-logo {
@@ -168,7 +177,7 @@
 					<p class="photo-description">
 						Lorizzle ipsizzle dolor sit black, yo mamma adipiscing elit. Mofo sapizzle velizzle, aliquet volutpizzle, suscipit mofo, mammasay mammasa mamma oo sa vizzle, arcu. Pellentesque brizzle dang. Sizzle erizzle. Pimpin' at funky fresh its fo rizzle turpis tempizzle the bizzle. Maurizzle pellentesque get down get down sheezy turpizzle. Vestibulum izzle tortor. Pellentesque brizzle rhoncus crackalackin. In hac dawg platea dictumst. I saw beyonces tizzles and my pizzle went crizzle dapibizzle. Black tellus urna, izzle dope, doggy rizzle, eleifend da bomb, nunc. Get down get down suscipizzle. Integizzle semper sure sed yo.
 					</p>
-					<p class="photo-credit">by Some Jackass</p>
+					<p class="photo-credit">by <a href="#">Some Jackass</a></p>
 					
 					<div class="service-logo"><a href="http://flickr.com/standardpixel"><img src="/img/flickr.png" alt="Flickr"></a></div>
 					<p class="service-credit"><a href="http://flickr.com/standardpixel/favorites">I Favorited this photo on flickr</a></p>
