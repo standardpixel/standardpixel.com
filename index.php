@@ -18,6 +18,32 @@
 				font-size:12px;
 				font-weight:normal;
 				color:#444;
+				padding:10px;
+			}
+			.domestica #logo {
+				position:relative;
+			}
+			.domestica #logo .illustration {
+				position:absolute;
+				top:7px;
+				left:0;
+			}
+			.domestica #logo .illustration div {
+				width:17px;
+				height:17px;
+				margin-top:1px;
+				border-radius:3px;
+			}
+			.domestica #logo .illustration .block-1 {background-color:rgba(118,118,118,1);}
+			.domestica #logo .illustration .block-2 {background-color:rgba(28,28,28,1);}
+			.domestica #logo .illustration .block-3 {background-color:rgba(79,79,79,1);}
+			.domestica #logo .illustration .block-4 {background-color:rgba(125,125,125,1);}
+			.domestica #logo h2 {
+				font-size:38px;
+				font-weight:500;
+				padding:0;
+				margin: 0 0 0 28px;
+				width:20px;
 			}
 		</style>
 		
