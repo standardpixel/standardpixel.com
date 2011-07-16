@@ -22,7 +22,7 @@
 				font-weight:normal;
 				color:#444;
 				margin:20px;
-				min-width:1250px;
+				min-width:1175px;
 			}
 			
 			a {
@@ -45,17 +45,17 @@
 			.domestica header {
 				position:relative;
 				height:74px;
-				margin-bottom:35px;
+				margin-bottom:65px;
 				padding:0;
 			}
 			
 			.domestica header h1 {
-				position:absolute;
-				right:0;
-				bottom:0;
 				font-weight:normal;
 				margin:0;
 				padding:0;
+				float:right;
+				margin-top:-64px;
+				width:690px;
 			}
 			
 			.domestica header #logo {
@@ -64,6 +64,7 @@
 				overflow:hidden;
 				width:215px;
 				margin:0;
+				margin-bottom:10px;
 			}
 			.domestica header #logo .illustration {
 				position:absolute;
@@ -114,10 +115,10 @@
 			}
 			
 			.domestica section article figcaption{
-				width:500px;
+				width:489px;
 				margin-left:20px;
-				padding:5px;
-				background-color:#efefef;
+				padding:10px;
+				border:solid 1px #eee;
 				border-radius:3px;
 				margin-bottom:2px;
 			}
@@ -150,7 +151,7 @@
 			
 			.domestica nav ul li {
 				display:inline-block;
-				width:284px;
+				width:269px;
 				height:100px;
 				vertical-align:top;
 				color:#aaa;
@@ -181,6 +182,7 @@
 			/* footer */
 			.domestica footer img {
 				float:left;
+				margin-right:10px;
 				
 			}
 		</style>
@@ -200,7 +202,7 @@
 					</div>
 					<h2>Standard Pixel</h2>
 				</div>
-				<h1>Curation of <i>things</i> by Eric Gelinas</h1>
+				<h1>Hello, I am Eric Gelinas. This site is where I showcase the many <i>things</i> which I "fave", "like", "+1", and otherwise curate online.</h1>
 			</header>
 
 			<section>
@@ -208,7 +210,7 @@
 					<figure>
 						<img src="http://farm6.static.flickr.com/5067/5624262088_2ecf2e1f21_z.jpg" width="640px" height="426px">
 					</figure>
-					<h2>One of my <a href="http://www.flickr.com/photos/standardpixel/favorites/">favorite</a> photos</h2>
+					<h2>One of my <a href="http://www.flickr.com/photos/standardpixel/favorites/">favorite</a> photos:</h2>
 					<figcaption>
 						<h3>Union Station</h3>
 						<p>Historic Los Angeles Union Station was purchased by the Los Angeles County MTA from from Catellus/Prologis on 4/14/2011 for a reported $75 million. Opened in May 1939, Union Station is known as the "Last of the Great Railway Station" built in the United States.</p>
