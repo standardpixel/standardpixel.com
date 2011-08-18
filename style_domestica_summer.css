@@ -7,7 +7,7 @@ html, body.domestica {
 	font-weight:normal;
 	color:#444;
 	margin:0 auto;
-	width:1220px;
+	min-width:1024px;
 }
 
 a {
@@ -19,7 +19,7 @@ h1, h2, h3 {
 	font-weight:normal;
 	margin:0;
 	padding:0;
-	font-family:georgia,garamond,serif;
+	font-family:"adobe-garamond-pro-1","adobe-garamond-pro-2",serif;
 }
 
 a:hover {
@@ -31,7 +31,7 @@ a:hover {
 	position:relative;
 	height:74px;
 	padding:30px 20px 31px 20px;
-	border-bottom:solid 2px #eee;
+	border-bottom:solid 3px #eee;
 }
 
 .domestica header h1 {
@@ -142,7 +142,6 @@ a:hover {
 /* nav */
 .domestica nav {
 	padding:20px;
-	border-top:solid 2px #eee;
 }
 
 .domestica nav ul {
@@ -173,7 +172,7 @@ a:hover {
 .domestica nav ul li a {
 	font-size:24px;
 	color:#333;
-	font-family:georgia,garamond,serif;
+	font-family:"adobe-garamond-pro-1","adobe-garamond-pro",serif;
 	
 }
 
@@ -183,14 +182,26 @@ a:hover {
 
 /* footer */
 .domestica footer {
+	position:relative;
 	padding:20px;
-	display:none;
+	border-top:solid 3px #eee;
 }
 
-.domestica footer img {
-	float:left;
-	margin-right:10px;
-	
+.domestica footer .cc-text {
+	display:block;
+	margin-left:100px;
+	width:350px;
+}
+
+.domestica footer .cc-text p {
+	padding:0;
+	margin:0;
+	position:absolute;
+	top:-53px;
+}
+
+.domestica footer .cc-text {
+	position:absolute;
 }
 
 /* Summer */
