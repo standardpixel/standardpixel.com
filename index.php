@@ -35,47 +35,47 @@
 			<nav>
 				<ul>
 					<li>
-						<a href="#">Blog</a>
+						<a href="http://blog.standardpixel.com/">Blog</a>
 						<p>My Tumblr blog which is mostly about music</p>
 					</li>
 					<li>
-						<a href="#">Resumé</a>
+						<a href="EricGelinas-WebInterfaceEngineer.php">Resumé</a>
 						<p>A little history about me</p>
 					</li>
 					<li>
-						<a href="#">Prototypes</a>
+						<a href="http://s.standardpixel.com/proto">Prototypes</a>
 						<p>Some small things I have been tinkering with</p>
 					</li>
 					<li>
-						<a href="#">Source</a>
+						<a href="http://github.com/standardpixel/standarpixel.com/">Source</a>
 						<p>The source code for this site on Github</p>
 					</li>
 					<li>
-						<a href="#">Photos</a>
+						<a href="http://flickr.com/standardpixel">Photos</a>
 						<p>Flickr Photostream</p>
 					</li>
 					<li>
-						<a href="#">Playlists</a>
+						<a href="http://8tracks.com/standardpixel">Playlists</a>
 						<p>Digital mixtapes which I have put together on 8tracks.com</p>
 					</li>
 					<li>
-						<a href="#">Music</a>
+						<a href="http://last.fm/user/dropinastorm">Music</a>
 						<p>Last.Fm profile</p>
 					</li>
 					<li>
-						<a href="#">Bookmarks</a>
+						<a href="http://pinboard.in/u:standardpixel">Bookmarks</a>
 						<p>Things I have bookmarked on Pinboard</p>
 					</li>
 					<li>
-						<a href="#">Wish List</a>
+						<a href="http://svpply.com/standardpixel">Wish List</a>
 						<p>Svpply list</p>
 					</li>
 					<li>
-						<a href="#">Places</a>
+						<a href="http://standardpixel.yelp.com/">Places</a>
 						<p>Yelp reviews</p>
 					</li>
 					<li>
-						<a href="#">Gigs</a>
+						<a href="http://www.songkick.com/users/standardpixel">Gigs</a>
 						<p>Songkick concerts</p>
 					</li>
 				</ul>
@@ -86,6 +86,22 @@
 				<div class="cc-text"><p><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">StandardPixel</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://standardpixel.com" property="cc:attributionName" rel="cc:attributionURL">Eric Gelinas</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.</p></div>
 			</footer>
 		</div>
+
+		<script>
+			(function() {
+				var element = document.getElementsByTagName('nav')[0];
+				
+				element.addEventListener('click',function(e) {
+					var parent_element = (e.srcElement.tagName !== 'LI') ? e.srcElement.parentNode : e.srcElement,
+					    link_elements  = parent_element.getElementsByTagName('a');
+					
+					if(link_elements && link_elements[0] && parent_element.tagName === "LI") {
+						var link_element = link_elements[0];
+						document.location.href=link_element.href;
+					}
+				},false);
+			})();
+		</script>
 
 	</body>
 </html>
