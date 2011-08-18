@@ -12,180 +12,9 @@
 		<!--script type="text/javascript" src="http://use.typekit.com/tkt0mro.js"></script!-->
 		<!--script type="text/javascript">try{Typekit.load();}catch(e){}</script-->
 		                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
-		<style>
-			.domestica section, .domestica article, .domestica figure, .domestica figcaption, .domestica caption {
-				margin:0;padding:0;
-			}
-			html, body.domestica {
-				font-family: helvetica,arial,sans-serif;
-				font-size:14px;
-				font-weight:normal;
-				color:#444;
-				margin:20px;
-				min-width:1175px;
-			}
-			
-			a {
-				text-decoration:none;
-			}
-			
-			h1, h2, h3 {
-				font-size:24px;
-				font-weight:normal;
-				margin:0;
-				padding:0;
-				font-family:georgia,garamond,serif;
-			}
-			
-			a:hover {
-				text-decoration:underline;
-			}
-			
-			/* header */
-			.domestica header {
-				position:relative;
-				height:74px;
-				margin-bottom:65px;
-				padding:0;
-			}
-			
-			.domestica header h1 {
-				font-weight:normal;
-				margin:0;
-				padding:0;
-				float:right;
-				margin-top:-64px;
-				width:690px;
-			}
-			
-			.domestica header #logo {
-				position:relative;
-				height:75px;
-				overflow:hidden;
-				width:215px;
-				margin:0;
-				margin-bottom:10px;
-			}
-			.domestica header #logo .illustration {
-				position:absolute;
-				top:0px;
-				left:0;
-			}
-			.domestica header #logo .illustration div {
-				width:18px;
-				height:18px;
-				margin-top:1px;
-				border-radius:3px;
-			}
-			.domestica header #logo .illustration div.first {
-				margin-top:0;
-			}
-			.domestica header #logo .illustration .block-1 {background-color:rgba(118,118,118,1);}
-			.domestica header #logo .illustration .block-2 {background-color:rgba(28,28,28,1);}
-			.domestica header #logo .illustration .block-3 {background-color:rgba(79,79,79,1);}
-			.domestica header #logo .illustration .block-4 {background-color:rgba(125,125,125,1);}
-			.domestica header #logo h2 {
-				font-size:47px;
-				font-weight:500;
-				padding:0;
-				margin: 0 0 0 28px;
-				position:absolute;
-				left:0;
-				top:-1px;
-				line-height:39px;
-			}
-			
-			/* body */
-			.domestica section {
-				margin-bottom:35px;
-			}
-			.domestica section article {
-				position:relative;
-			}
-			.domestica section article figure, .domestica section article figcaption{
-				display:inline-block;
-				vertical-align:bottom;
-			}
-			.domestica section article figure {
-				width:640px;
-			}
-			
-			.domestica section article figure img {
-				border-radius:3px;
-			}
-			
-			.domestica section article figcaption{
-				width:489px;
-				margin-left:20px;
-				padding:10px;
-				border:solid 1px #eee;
-				border-radius:3px;
-				margin-bottom:2px;
-			}
-			.domestica section article figcaption p:last-child {
-				margin-bottom:0;
-			}
-			.domestica section h2 {
-				position:absolute;
-				top:0;
-				left:660px;
-				margin:0;
-				padding:0px;
-				font-weight:normal;
-				display:block;
-				width:500px;
-				height:70px;
-				
-			}
-			
-			/* nav */
-			.domestica nav {
-				margin-bottom:25px;
-			}
-			
-			.domestica nav ul {
-				margin:0;
-				margin-right:-2px;
-				padding:0;
-			}
-			
-			.domestica nav ul li {
-				display:inline-block;
-				width:269px;
-				height:100px;
-				vertical-align:top;
-				color:#aaa;
-				padding:10px;
-				margin:0 0 0 0;
-				list-style-type: none;
-				border:solid 1px #fff;
-				border-radius:3px;
-			}
-			
-			.domestica nav ul li:hover {
-				color:#333;
-				border:solid 1px #eee;
-				cursor:pointer;cursor:hand;
-			}
-			
-			.domestica nav ul li a {
-				font-size:24px;
-				color:#333;
-				font-family:georgia,garamond,serif;
-				
-			}
-			
-			.domestica nav ul li:hover a {
-				color:blue;
-			}
-			
-			/* footer */
-			.domestica footer img {
-				float:left;
-				margin-right:10px;
-				
-			}
-		</style>
+		<link rel="stylesheet" href="style_domestica_summer.css" type="text/css" media="screen" charset="utf-8">
+		
+		<style></style>
 		
 	</head>
 
@@ -207,10 +36,10 @@
 
 			<section>
 				<article class="container">
+					<h2>One of my <a href="http://www.flickr.com/photos/standardpixel/favorites/">favorite</a> photos:</h2>
 					<figure>
 						<img src="http://farm6.static.flickr.com/5067/5624262088_2ecf2e1f21_z.jpg" width="640px" height="426px">
 					</figure>
-					<h2>One of my <a href="http://www.flickr.com/photos/standardpixel/favorites/">favorite</a> photos:</h2>
 					<figcaption>
 						<h3>Union Station</h3>
 						<p>Historic Los Angeles Union Station was purchased by the Los Angeles County MTA from from Catellus/Prologis on 4/14/2011 for a reported $75 million. Opened in May 1939, Union Station is known as the "Last of the Great Railway Station" built in the United States.</p>
@@ -220,7 +49,7 @@
 						<p>The MTA headquarters building can also be seen behind Union Station to the right.</p>
 
 						<p>See also: <a href="http://thesource.metro.net/2011/04/14/metro-tonight-officially-becomes-new-owner-of-los-angeles-union-station/">[a page not on standardpixel.com]</a></p>
-
+						<div class="service_credit"><img src="img/flickr.png">I favorited this photo in March 2011 on Flickr</div>
 
 					</figcaption>
 				</article>
