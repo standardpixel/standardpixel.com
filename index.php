@@ -86,12 +86,14 @@
 				<div class="cc-text"><p><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">StandardPixel</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://standardpixel.com" property="cc:attributionName" rel="cc:attributionURL">Eric Gelinas</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.</p></div>
 			</footer>
 		</div>
-
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		
 		<script>
 			(function() {
 				var element = document.getElementsByTagName('nav')[0];
 				
-				element.addEventListener('click',function(e) {
+				$('nav').click(function(e) {
 					var parent_element = (e.srcElement.tagName !== 'LI') ? e.srcElement.parentNode : e.srcElement,
 					    link_elements  = parent_element.getElementsByTagName('a');
 					
@@ -99,7 +101,12 @@
 						var link_element = link_elements[0];
 						document.location.href=link_element.href;
 					}
+				});
+				/*
+				element.addEventListener('click',function(e) {
+					
 				},false);
+				*/
 			})();
 		</script>
 
