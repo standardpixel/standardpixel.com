@@ -105,7 +105,7 @@
 						
 						if(new_left_value > 1) {
 							$('h1').css('right','none');
-							$('h1').css('width',(last_in_row.width()*2)+31)
+							$('h1').css('width',(last_in_row.width()*2)+28)
 							$('h1').css('left',new_left_value);
 						}
 					}
