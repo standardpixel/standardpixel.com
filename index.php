@@ -105,7 +105,7 @@
 						
 						if(new_left_value > 1) {
 							$('h1').css('right','none');
-							$('h1').css('width',(last_in_row.width()*2)+28)
+							$('h1').css('width',(last_in_row.width()*2)+31)
 							$('h1').css('left',new_left_value);
 						}
 					}
@@ -117,10 +117,14 @@
 				
 				position_dependants();
 				
-				setTimeout(function() {
-					$('h1').css('-webkit-transition','left .2s linear');
-					$('h1').css('transition','left .2s linear');
-				},1000);
+				$(document).ready(function() {
+					position_dependants();
+					
+					setTimeout(function() {
+						$('h1').css('-webkit-transition','left .2s linear');
+						$('h1').css('transition','left .2s linear');
+					},1000);	
+				});
 				
 				$('nav').click(function(e) {
 					var parent_element = (e.srcElement.tagName !== 'LI') ? e.srcElement.parentNode : e.srcElement,
