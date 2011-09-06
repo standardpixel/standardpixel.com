@@ -37,10 +37,13 @@ a:hover {
 .domestica header h1 {
 	font-weight:normal;
 	margin:0;
-	padding:0;
-	float:right;
+	padding:0 10px;
 	margin-top:-87px;
 	width:581px;
+	position:absolute;
+	right:0px;
+	left:none;
+	
 }
 
 .domestica header #logo {
@@ -177,7 +180,7 @@ a:hover {
 }
 
 .domestica nav ul li:hover a {
-	color:blue;
+	text-decoration:none;
 }
 
 /* footer */
@@ -185,19 +188,20 @@ a:hover {
 	position:relative;
 	padding:20px;
 	border-top:solid 3px #eee;
+	font-size:10px;
 }
 
 .domestica footer .cc-text {
 	display:block;
 	margin-left:100px;
-	width:350px;
+	width:80%;
 }
 
 .domestica footer .cc-text p {
 	padding:0;
 	margin:0;
 	position:absolute;
-	top:-53px;
+	top:-45px;
 }
 
 .domestica footer .cc-text {
@@ -206,8 +210,11 @@ a:hover {
 
 /* Summer */
 .summer nav ul li:hover {
-	background-color: #eee;
+	background-color: #0988A9;
 }
-.summer a, .summer nav ul li:hover a {
+.summer a {
 	color:#0988A9;
+}
+.summer nav ul li:hover, .summer nav ul li:hover a {
+	color:#fff;
 }

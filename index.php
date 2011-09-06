@@ -82,7 +82,7 @@
 			</nav>
 
 			<footer>
-				<div class="cc-img"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png" /></a></div>
+				<div class="cc-img"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/"><img alt="Creative Commons License" align="top" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png" /></a></div>
 				<div class="cc-text"><p><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">StandardPixel</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://standardpixel.com" property="cc:attributionName" rel="cc:attributionURL">Eric Gelinas</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.</p></div>
 			</footer>
 		</div>
@@ -91,7 +91,33 @@
 		
 		<script>
 			(function() {
-				var element = document.getElementsByTagName('nav')[0];
+				function getRowLength() {
+					return Math.floor( $('nav').width() / $('nav li:first-child').width() )
+				}
+				
+				function position_dependants() {
+					if($('h1')) {
+						var last_in_row    = $($('nav li')[(getRowLength()-1)]),
+						    new_left_value = (last_in_row.offset().left+last_in_row.width())-$('h1').width();
+						
+						if(new_left_value > 1) {
+							$('h1').css('right','none');
+							$('h1').css('width',(last_in_row.width()*2)+28)
+							$('h1').css('left',new_left_value);
+						}
+					}
+				}
+				
+				$(window).resize(function(e) {
+					position_dependants()
+				});
+				
+				position_dependants();
+				
+				setTimeout(function() {
+					$('h1').css('-webkit-transition','left .2s linear');
+					$('h1').css('transition','left .2s linear');
+				},1000);
 				
 				$('nav').click(function(e) {
 					var parent_element = (e.srcElement.tagName !== 'LI') ? e.srcElement.parentNode : e.srcElement,
@@ -102,11 +128,7 @@
 						document.location.href=link_element.href;
 					}
 				});
-				/*
-				element.addEventListener('click',function(e) {
-					
-				},false);
-				*/
+				
 			})();
 		</script>
 
