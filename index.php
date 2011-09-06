@@ -43,7 +43,7 @@
 					</li>
 					<li>
 						<a href="EricGelinas-WebInterfaceEngineer.php">Resumé</a>
-						<p>A little history about me</p>
+						<p>What exactly I have been doing with my life for the past <?=(date('Y')-1997)?> years</p>
 					</li>
 					<li>
 						<a href="http://s.standardpixel.com/proto">Prototypes</a>
@@ -51,11 +51,11 @@
 					</li>
 					<li>
 						<a href="http://github.com/standardpixel/standarpixel.com/">Source</a>
-						<p>The source code for this site on Github</p>
+						<p>The source code for this site and a lot more of my tinkerings</p>
 					</li>
 					<li>
 						<a href="http://flickr.com/standardpixel">Photos</a>
-						<p>Flickr Photostream</p>
+						<p>My flickr photostream. Basically my life since 2007, along with a little more.</p>
 					</li>
 					<li>
 						<a href="http://8tracks.com/standardpixel">Playlists</a>
@@ -63,23 +63,23 @@
 					</li>
 					<li>
 						<a href="http://last.fm/user/dropinastorm">Music</a>
-						<p>Last.Fm profile</p>
+						<p>A ridiculous amount of information on what I have been listening too thanks to last.fm</p>
 					</li>
 					<li>
 						<a href="http://pinboard.in/u:standardpixel">Bookmarks</a>
-						<p>Things I have bookmarked on Pinboard</p>
+						<p>Pinboard silently collects links which I share and save directly.</p>
 					</li>
 					<li>
 						<a href="http://svpply.com/standardpixel">Wish List</a>
-						<p>Svpply list</p>
+						<p>Lots of items which I want but in many cases will never have on Svpply.com</p>
 					</li>
 					<li>
 						<a href="http://standardpixel.yelp.com/">Places</a>
-						<p>Yelp reviews</p>
+						<p>Places (mostly in SF) and elsewhere, where I have been and some words on the ones which I feel most strongly</p>
 					</li>
 					<li>
 						<a href="http://www.songkick.com/users/standardpixel">Gigs</a>
-						<p>Songkick concerts</p>
+						<p>The concerts I am interested in and possibly going too</p>
 					</li>
 				</ul>
 			</nav>

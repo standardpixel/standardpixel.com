@@ -29,7 +29,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+	line-height:1.5em;
 }
 ol, ul {
 	list-style: none;
@@ -62,20 +62,30 @@ html, body.domestica {
 	min-width:1024px;
 }
 
-a {
+.domestica a {
 	text-decoration:none;
 }
 
-h1, h2, h3 {
-	font-size:24px;
-	font-weight:normal;
-	margin:0;
-	padding:0;
-	font-family:"adobe-garamond-pro-1","adobe-garamond-pro-2",serif;
+.domestica a:hover {
+	text-decoration:underline;
 }
 
-a:hover {
-	text-decoration:underline;
+.domestica p {
+	margin-bottom:10px;
+}
+
+.domestica ul {
+margin-left:20px;
+padding-left:20px;
+list-style:disc;
+}
+
+.domestica h1, .domestica h2, .domestica h3 {
+	font-size:24px;
+	font-weight:normal;
+	margin:0 0 10px 0;
+	padding:0;
+	font-family:"adobe-garamond-pro-1","adobe-garamond-pro-2",serif;
 }
 
 /* header */
@@ -255,7 +265,7 @@ a:hover {
 	padding:0;
 	margin:0;
 	position:absolute;
-	top:-45px;
+	top:-64px;
 }
 
 .domestica footer .cc-text {
