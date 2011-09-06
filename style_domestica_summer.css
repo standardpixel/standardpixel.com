@@ -216,6 +216,8 @@ a:hover {
 	list-style-type: none;
 	border:solid 1px #fff;
 	border-radius:3px;
+	-webkit-transition:.3s background-color;
+	transition:.3s background-color;
 }
 
 .domestica nav ul li:hover {
@@ -240,7 +242,7 @@ a:hover {
 	position:relative;
 	padding:20px;
 	border-top:solid 3px #eee;
-	font-size:10px;
+	font-size:11px;
 }
 
 .domestica footer .cc-text {
