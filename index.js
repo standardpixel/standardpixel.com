@@ -1,9 +1,10 @@
-var port       = 3000,
-	http       = require('http'),
+var http       = require('http'),
     express    = require('express'),
 	colors     = require('colors'),
     app        = express(),
-	app_title  = 'StandardPixel';
+	config     = require(__dirname + '/config.json'),
+	app_title  = config.app.name,
+	port       = config.app.port;
 
 app.set('views', __dirname + '/ui');
 app.set('view engine', 'html');
