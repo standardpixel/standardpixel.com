@@ -1,0 +1,31 @@
+{
+  "name": "standardpixel-prototype-boilerplate",
+  "preferGlobal": "false",
+  "version": "0.1.0",
+  "author": "Eric Gelinas about@standardpixel.com",
+  "description": "A boiler plate node stack for serving prototypes",
+  "contributors": [ 
+    {
+      "name": "Eric Gelinas",
+      "email": "eric@standardpixel.com"
+    } 
+  ],
+  "scripts": {
+    "start": "node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/standardpixel/standardpixel-prototype-boilerplate"
+  },
+  "dependencies" : {
+	"colors"   : "*",
+	"express"  : "*",
+	"hbs"      : "*",
+	"less"     : "*",
+	"mocha"    : "*"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=0.6"
+  }
+}
