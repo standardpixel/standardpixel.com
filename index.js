@@ -1,8 +1,6 @@
 var http           = require('http'),
     express        = require('express'),
 	colors         = require('colors'),
-	passport       = require('passport'),
-	BasicStrategy = require('passport-http').BasicStrategy;
     app            = express(),
 	config         = require(__dirname + '/config.json'),
 	app_title      = config.app.name,
