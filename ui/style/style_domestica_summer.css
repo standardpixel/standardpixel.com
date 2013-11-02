@@ -105,7 +105,13 @@ list-style:disc;
 	position:absolute;
 	right:0px;
 	left:none;
-	
+}
+
+.domestica .allslidey header h1 {
+	transition:left .5s;
+	-moz-transition:left .5s;
+	-webkit-transition:left .5s;
+	-o-transition:left .5s;
 }
 
 .domestica header #logo {
@@ -141,7 +147,7 @@ list-style:disc;
 	margin: 0 0 0 28px;
 	position:absolute;
 	left:0;
-	top:-1px;
+	top:0px;
 	line-height:39px;
 }
 
@@ -196,6 +202,14 @@ list-style:disc;
 	background-color:#eee;
 	border-radius:3px 3px 0 0;
 	display:none;
+}
+
+.domestica section h3 {
+	margin-top:25px;
+}
+
+.domestica section p.subtle {
+	color:rgba(125,125,125,1);
 }
 
 .domestica section .service_credit {
