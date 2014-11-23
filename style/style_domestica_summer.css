@@ -104,10 +104,11 @@ list-style:disc;
 	margin:0;
 	padding:0 10px;
 	margin-top:-87px;
-	width:46%;
+	width:47%;
 	position:absolute;
 	right:30px;
 	left:none;
+	line-height:24px;
 }
 
 .domestica .allslidey header h1 {
@@ -119,7 +120,22 @@ list-style:disc;
 
 @media (max-width: 1023px) {
 	.domestica header h1 {
-		display:none;
+		font-size:97%;
+		line-height: 20px;
+		width:43%;
+	}
+}
+
+@media (max-width: 600px) {
+	.domestica header h1 {
+		width:100%;
+		position:relative;
+		right:auto;
+		margin-top:0px;
+		padding:0;
+	}
+	.domestica header {
+		height:auto;
 	}
 }
 
@@ -157,7 +173,7 @@ list-style:disc;
 	position:absolute;
 	left:0;
 	top:0px;
-	line-height:39px;
+	line-height:40px;
 }
 
 /* body */
@@ -234,7 +250,6 @@ list-style:disc;
 
 .domestica nav ul {
 	margin:0;
-	margin-right:-2px;
 	padding:0;
 	width:100%;
 }
