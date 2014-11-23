@@ -43,7 +43,7 @@
 					</li>
 					<li>
 						<a href="resume">Resumé</a>
-						<p>What exactly I have been doing with my life for the past <?=(date('Y')-1997)?> years</p>
+						<p>What exactly I have been doing with my life for the past <span id="since-1997"></span> years</p>
 					</li>
 					<li>
 						<a href="http://github.com/standardpixel/standarpixel.com/">Source</a>
@@ -67,7 +67,7 @@
 					</li>
 					<li>
 						<a href="http://www.pinterest.com/standardpixel/wants/">Wish List</a>
-						<p>Lots of items which I want but in many cases will never have on Svpply.com</p>
+						<p>This is stuff you can buy me... Seriously, get on it!</p>
 					</li>
 					<li>
 						<a href="https://foursquare.com/user/143129/history">Places</a>
@@ -89,6 +89,7 @@
 		<script src="http://code.jquery.com/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
 
 		<script>
+			"use strict";
 			(function() {
 				function getRowLength() {
 					return Math.floor( $('nav').width() / $('nav li:first-child').outerWidth() );
@@ -106,6 +107,8 @@
 						}
 					}
 				}
+
+				document.getElementById('since-1997').innerHTML = (new Date().getYear())-1997;
 
 				$(window).resize(function(e) {
 					position_dependants()
