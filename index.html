@@ -110,6 +110,7 @@
 
 				document.getElementById('since-1997').innerHTML = (new Date().getFullYear())-1997;
 
+				/*
 				$(window).resize(function(e) {
 					position_dependants()
 				});
@@ -122,6 +123,7 @@
 						position_dependants();
 					}, 1);
 				});
+				*/
 
 				$('nav').click(function(e) {
 					var parent_element = (e.srcElement.tagName !== 'LI') ? e.srcElement.parentNode : e.srcElement,

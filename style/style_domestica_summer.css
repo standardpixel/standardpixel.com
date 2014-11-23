@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -12,8 +12,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -24,7 +24,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -59,7 +59,6 @@ html, body.domestica {
 	font-weight:normal;
 	color:#444;
 	margin:0 auto;
-	min-width:1024px;
 }
 
 .domestica a {
@@ -88,11 +87,15 @@ list-style:disc;
 	font-family:"adobe-garamond-pro-1","adobe-garamond-pro-2",serif;
 }
 
+.domestica div, .domestica ul, .domestica li, .domestica span, .domestica section, .domestica article {
+	box-sizing:border-box;
+}
+
 /* header */
 .domestica header {
 	position:relative;
 	height:74px;
-	padding:30px 20px 31px 20px;
+	padding:30px 30px 31px 30px;
 	border-bottom:solid 3px #eee;
 }
 
@@ -101,9 +104,9 @@ list-style:disc;
 	margin:0;
 	padding:0 10px;
 	margin-top:-87px;
-	width:581px;
+	width:46%;
 	position:absolute;
-	right:0px;
+	right:30px;
 	left:none;
 }
 
@@ -112,6 +115,12 @@ list-style:disc;
 	-moz-transition:left .5s;
 	-webkit-transition:left .5s;
 	-o-transition:left .5s;
+}
+
+@media (max-width: 1023px) {
+	.domestica header h1 {
+		display:none;
+	}
 }
 
 .domestica header #logo {
@@ -227,11 +236,13 @@ list-style:disc;
 	margin:0;
 	margin-right:-2px;
 	padding:0;
+	width:100%;
 }
 
 .domestica nav ul li {
 	display:inline-block;
-	width:269px;
+	width:24%;
+	max-width:24%;
 	height:100px;
 	vertical-align:top;
 	color:#aaa;
@@ -240,8 +251,22 @@ list-style:disc;
 	list-style-type: none;
 	border:solid 1px #fff;
 	border-radius:3px;
-	-webkit-transition:.3s background-color;
-	transition:.3s background-color;
+	-webkit-transition:.3s background-color, .3s width;
+	transition:.3s background-color, .3s width;
+}
+
+@media (max-width: 1023px) {
+	.domestica nav ul li {
+		width:49%;
+		max-width:49%;
+	}
+}
+
+@media (max-width: 600px) {
+	.domestica nav ul li {
+		width:100%;
+		max-width:100%;
+	}
 }
 
 .domestica nav ul li:hover {
@@ -254,7 +279,7 @@ list-style:disc;
 	font-size:24px;
 	color:#333;
 	font-family:"adobe-garamond-pro-1","adobe-garamond-pro",serif;
-	
+
 }
 
 .domestica nav ul li:hover a {
