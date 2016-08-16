@@ -2,6 +2,9 @@
 	<head>
 		<meta charset="utf-8">
 
+		<!-- Dear reader, this code was mostly written in 2011. Please judge
+		     code conventions and syntax accordingy. -->
+
 		<title>StandardPixel.com: Curation of _things_ by Eric Gelinas</title>
 		<meta name="description" content="">
 		<meta name="author" content="Eric Gelinas">
@@ -35,45 +38,45 @@
 				<h1>Hello, I am Eric Gelinas. StandardPixel.com is where I showcase the many <i>things</i> which I "fave", "like", "+1", and otherwise curate online.</h1>
 			</header>
 
-			<nav>
+			<nav class="nav">
 				<ul>
-					<li>
+					<li class="nav__item">
 						<a href="http://blog.standardpixel.com/">Blog</a>
 						<p>My Tumblr blog which is mostly about music</p>
 					</li>
-					<li>
+					<li class="nav__item">
 						<a href="resume.html">Resumé</a>
 						<p>What exactly I have been doing with my life for the past <span id="since-1997"></span> years</p>
 					</li>
-					<li>
+					<li class="nav__item">
 						<a href="http://github.com/standardpixel/standarpixel.com/">Source</a>
 						<p>The source code for this site and a lot more of my tinkerings</p>
 					</li>
-					<li>
+					<li class="nav__item">
 						<a href="http://flickr.com/standardpixel">Photos</a>
 						<p>My flickr photostream. Basically my life since 2007, along with a little more.</p>
 					</li>
-					<li>
+					<li class="nav__item">
 						<a href="https://play.spotify.com/user/standardpixel">Playlists</a>
 						<p>Digital mixtapes which I have put together on Spotify</p>
 					</li>
-					<li>
+					<li class="nav__item">
 						<a href="http://last.fm/user/dropinastorm">Music</a>
 						<p>A ridiculous amount of information on what I have been listening too thanks to last.fm</p>
 					</li>
-					<li>
+					<li class="nav__item">
 						<a href="http://pinboard.in/u:standardpixel">Bookmarks</a>
 						<p>Pinboard silently collects links which I share and save directly.</p>
 					</li>
-					<li>
+					<li class="nav__item">
 						<a href="http://www.pinterest.com/standardpixel/wants/">Wish List</a>
 						<p>This is stuff you can buy me... Seriously, get on it!</p>
 					</li>
-					<li>
+					<li class="nav__item">
 						<a href="https://foursquare.com/user/143129/history">Places</a>
 						<p>My Swarm checkins around town and sometimes the world</p>
 					</li>
-					<li>
+					<li class="nav__item">
 						<a href="http://www.songkick.com/users/standardpixel">Gigs</a>
 						<p>The concerts I am interested in and possibly going too</p>
 					</li>
@@ -86,54 +89,43 @@
 			</footer>
 		</div>
 
-		<script src="http://code.jquery.com/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
-
 		<script>
 			"use strict";
 			(function() {
-				/*
-				function getRowLength() {
-					return Math.floor( $('nav').width() / $('nav li:first-child').outerWidth() );
-				}
 
-				function position_dependants() {
-					if($('h1')) {
-						var last_in_row    = $($('nav li')[(getRowLength()-1)]),
-						    new_left_value = (last_in_row.offset().left+last_in_row.width())-($('h1').width());
+				function parentClassHas(startingElement, className, depth) {
 
-						if(new_left_value > 1) {
-							$('h1').css('width',(last_in_row.width()*2)+28);
-							$('h1').css('right','none');
-							$('h1').css('left', new_left_value);
-						}
-					}
-				}
-				*/
+	        var last  = startingElement;
+
+	        for (var i=0; (depth||10) > i && last; i++) {
+
+	          if (typeof last.classList === "object" && last.classList.contains(className)) {
+
+	            return last;
+
+	          } else if (last && last.className && typeof last.className === "string" && typeof last.className.indexOf === "function" && (last.className && last.className.indexOf(className)) > -1) {
+
+	            return last;
+
+	          }
+
+	          last = last.parentNode;
+
+	        }
+
+	        return null;
+	      }
+
+				var navElement = document.querySelector("#container nav");
 
 				document.getElementById('since-1997').innerHTML = (new Date().getFullYear())-1997;
 
-				/*
-				$(window).resize(function(e) {
-					position_dependants()
-				});
+				navElement.addEventListener("click", function(eventClick) {
+					var isInNav = parentClassHas(eventClick.target, 'nav__item', 3);
+					var link = isInNav.querySelector("a");
 
-				position_dependants();
-
-				$(document).ready(function() {
-					setTimeout(function() {
-						$('body').addClass('allslidey');
-						position_dependants();
-					}, 1);
-				});
-				*/
-
-				$('nav').click(function(e) {
-					var parent_element = (e.srcElement.tagName !== 'LI') ? e.srcElement.parentNode : e.srcElement,
-					    link_elements  = parent_element.getElementsByTagName('a');
-
-					if(link_elements && link_elements[0] && parent_element.tagName === "LI") {
-						var link_element = link_elements[0];
-						document.location.href=link_element.href;
+					if (isInNav && link) {
+						location.href = link.href;
 					}
 				});
 
