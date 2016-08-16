@@ -121,12 +121,17 @@
 				document.getElementById('since-1997').innerHTML = (new Date().getFullYear())-1997;
 
 				navElement.addEventListener("click", function(eventClick) {
+
 					var isInNav = parentClassHas(eventClick.target, 'nav__item', 3);
+
 					var link = isInNav.querySelector("a");
 
 					if (isInNav && link) {
+
 						location.href = link.href;
+
 					}
+					
 				});
 
 			})();
