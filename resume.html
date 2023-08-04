@@ -1,4 +1,5 @@
-<!doctype html>
+<!DOCTYPE html>
+<html>
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -16,20 +17,110 @@
         <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
+    <!-- Google Fonts - Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Existing styles -->
     <link rel="stylesheet" href="style/style_domestica_summer.css" type="text/css" media="screen" charset="utf-8">
+
+    <style media='print'>
+        h2, footer, .typekit-badge, .link-off { display:none !important; }
+        body {
+            font-size: 10pt;
+            background: none;
+            color: black;
+            font-family: 'Roboto', sans-serif;
+            line-height: 13pt;
+        }
+    </style>
+</head>
+
+<body class="domestica summer">
+
+    <div id="container" style="max-width:900px; margin:0 auto;">
+        <header>
+            <div id='logo' onclick="document.location.href='/';">
+                <div class="illustration">
+                    <div class="block-1 first"></div>
+                    <div class="block-2"></div>
+                    <div class="block-3"></div>
+                    <div class="block-4"></div>
+                </div>
+                <h2>Standard Pixel</h2>
+            </div>
+            <h1 style="text-align:right;">Resume of Eric Gelinas: Humanizing Technology</h1>
+        </header>
+
+        <section>
+            <!-- ... Content remains unchanged ... -->
+        </section>
+
+        <section class="link-off">
+            <a href="/">...off to StandardPixel.com...</a>
+        </section>
+
+        <footer>
+            <p>Thank you for having a look at my career. This is the best summary I could manage with HTML as a medium. I recommend a real conversation for best results.</p>
+        </footer>
+    </div>
+
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-3495577-1', 'standardpixel.com');
+        ga('send', 'pageview');
+    </script>
+
+</body>
+</html>
+Now the document uses the Google Roboto font with weights 400 (normal) and 700 (bold) for the body text, and Adobe TypeKit usage has been removed.
+
+
+
+
+User
+Can you please make sure references to Frontend including Front-End are all represented as Frontend?
+ChatGPT
+Certainly! I'll update the references to "Front-End" and "Frontend" to consistently use "Frontend" throughout the document:
+
+html
+Copy code
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <!-- Dear reader, this code was mostly written in 2011. Please judge
+         code conventions and syntax accordingly. -->
+
+    <title>Resume of Eric Gelinas: I Make Great Interfaces</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <meta name="viewport" content="width=device-width, initial-scale=0.9">
+
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 
     <!-- Google Fonts - Roboto -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
     <!-- Existing styles -->
+    <link rel="stylesheet" href="style/style_domestica_summer.css" type="text/css" media="screen" charset="utf-8">
+
     <style media='print'>
-        h2, footer, .typekit-badge, .link-off{display:none !important;}
-        body{
-            font-size:10pt;
+        h2, footer, .typekit-badge, .link-off { display:none !important; }
+        body {
+            font-size: 10pt;
             background: none;
             color: black;
             font-family: 'Roboto', sans-serif;
-            line-height:13pt;
+            line-height: 13pt;
         }
     </style>
 </head>
@@ -97,7 +188,7 @@
             <p>2015 to 2016: Web Developer - Dropbox, San Francisco, CA</p>
             <p>
                 <ul>
-                    <li>Primary front-end developer on the "Campus Cup" campaign - one of the first production React applications at Dropbox</li>
+                    <li>Primary frontend developer on the "Campus Cup" campaign - one of the first production React applications at Dropbox</li>
                     <li>Trained peers on React</li>
                     <li>Performed 2-6 engineering interviews a week and trained peers on interview procedures</li>
                     <li>Built a mechanism for serving SVGs which are internationalized at runtime and cached</li>
@@ -111,7 +202,7 @@
                 </ul>
             </p>
 
-            <p>2014 to 2015: Sr. Front-End Engineer / UX Designer - Stamen Design, San Francisco, CA</p>
+            <p>2014 to 2015: Sr. Frontend Engineer / UX Designer - Stamen Design, San Francisco, CA</p>
             <p>
                 <ul>
                     <li>Full-stack JavaScript development of <a href="http://caliparks.org">caliparks.org</a> [<a href="https://github.com/stamen/caliparks.org">Source</a>]</li>
@@ -129,7 +220,7 @@
                 </ul>
             </p>
 
-            <p>2014 to 2015: Front-End Engineer Contractor - Pop, San Francisco, CA</p>
+            <p>2014 to 2015: Frontend Engineer Contractor - Pop, San Francisco, CA</p>
             <p>
                 <ul>
                     <li>Built a website to market a communication app</li>
@@ -139,7 +230,7 @@
                 </ul>
             </p>
 
-            <p>2009 to 2013: Sr. Front-End Engineer - Flickr, San Francisco, CA</p>
+            <p>2009 to 2013: Sr. Frontend Engineer - Flickr, San Francisco, CA</p>
             <p>
                 <ul>
                     <li>Implemented an engineering project management process which was adopted by all project teams</li>
@@ -147,20 +238,20 @@
                     <li>Moved flickr.com/map to run on LeafletJS and created a system for displaying map layers based on time taken and geo-coordinate of a photo</li>
                     <li>Developed Flickr's primary web geotagging interface</li>
                     <li>Key contributor in a complete redesign of the Flickr Photo page in 2010</li>
-                    <li>Front-End code changes on Flickr.com, which include JavaScript, HTML, CSS, and PHP</li>
-                    <li>Involved in architecture decisions for front-end technologies</li>
+                    <li>Frontend code changes on Flickr.com, which include JavaScript, HTML, CSS, and PHP</li>
+                    <li>Involved in architecture decisions for frontend technologies</li>
                 </ul>
                 <ul>
                     <li><a href="http://flickr.com/">flickr.com</a></li>
                 </ul>
             </p>
 
-            <p>2007 to 2009: Front-End Engineer - Yahoo!, Burbank, CA</p>
+            <p>2007 to 2009: Frontend Engineer - Yahoo!, Burbank, CA</p>
             <p>
                 <ul>
                     <li>Wrote an extension for the YUI Data Table which inserts contextual data as sub rows</li>
-                    <li>Designed a Front-End unit testing harness for use in a JSP based framework</li>
-                    <li>Gave talks on the subject of Front-End development to Yahoo! employees</li>
+                    <li>Designed a Frontend unit testing harness for use in a JSP based framework</li>
+                    <li>Gave talks on the subject of Frontend development to Yahoo! employees</li>
                     <li>Created a process for feeding patches from the APT product to the YUI library</li>
                     <li>Authored and supported JavaScript-based interface components distributed through a packaged framework</li>
                     <li>Offered ongoing support and guidance to developers through mail lists and documentation</li>
