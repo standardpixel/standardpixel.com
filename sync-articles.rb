@@ -4,6 +4,7 @@
 require 'uri'
 require 'net/http'
 require 'date'
+require 'yaml'
 
 LINKS_FILE = File.expand_path("~/Library/Mobile Documents/iCloud~md~obsidian/Documents/evg/Links.md")
 ARTICLES_FILE = File.expand_path("_data/articles.yml")
@@ -86,6 +87,22 @@ if urls.empty?
   exit 0
 end
 
+# Load existing articles to preserve dates
+existing_articles = {}
+if File.exist?(ARTICLES_FILE)
+  begin
+    existing_data = YAML.load_file(ARTICLES_FILE)
+    if existing_data.is_a?(Array)
+      existing_data.each do |article|
+        existing_articles[article['url']] = article['date']
+      end
+      puts "Loaded #{existing_articles.size} existing articles"
+    end
+  rescue => e
+    puts "Warning: Could not load existing articles.yml: #{e.message}"
+  end
+end
+
 puts "Fetching titles..."
 
 articles = []
@@ -98,13 +115,17 @@ urls.each_with_index do |link, index|
     fetch_title(link[:url])
   end
 
+  # Use existing date if article already exists, otherwise use today
+  article_date = existing_articles[link[:url]] || Date.today
+  is_new = !existing_articles.key?(link[:url])
+
   articles << {
     title: title,
     url: link[:url],
-    date: Date.today
+    date: article_date
   }
 
-  puts "✓ #{title}"
+  puts "✓ #{title}#{is_new ? ' (new)' : ''}"
   sleep 1 # Be polite to servers
 end
 
