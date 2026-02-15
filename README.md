@@ -62,12 +62,15 @@ A custom Obsidian plugin is installed to quickly capture links:
 
 1. Click the link icon (🔗) in the Obsidian ribbon (left sidebar)
 2. Paste a URL in the modal that appears
-3. Press Enter or click "Add Link"
-4. The link is added to the top of Links.md
+3. Optionally add a note about the link
+4. Press Enter or click "Add Link"
+5. The link is added to the top of Links.md
 
 **Plugin location**: `.obsidian/plugins/quick-link-capture/`
 
 Enable it in: Settings → Community Plugins → Toggle "Quick Link Capture" ON
+
+**Notes are optional**: You can add a brief note to explain why a link is interesting. Notes appear below the link on the articles page.
 
 ### Automatic Syncing
 

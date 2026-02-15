@@ -57,14 +57,20 @@ end
 def extract_urls(content)
   urls = []
 
-  # Match markdown links: [text](url) or plain URLs
-  content.scan(/\[([^\]]+)\]\(([^)]+)\)/) do |text, url|
-    urls << { url: url.strip, title: text.strip }
-  end
+  # Process line by line to properly handle notes
+  content.each_line do |line|
+    line = line.strip
+    next if line.empty?
 
-  # Match plain URLs with bullet points
-  content.scan(/^-\s+(https?:\/\/[^\s]+)/) do |url|
-    urls << { url: url[0].strip, title: nil }
+    # Match markdown links: [text](url)
+    if line =~ /\[([^\]]+)\]\(([^)]+)\)/
+      urls << { url: $2.strip, title: $1.strip, note: nil }
+    # Match plain URLs with bullet points, with optional note after " - "
+    # Format: - URL or - URL - note text
+    elsif line =~ /^-\s+(https?:\/\/\S+)(?:\s+-\s+(.+))?$/
+      note = $2 ? $2.strip : nil
+      urls << { url: $1.strip, title: nil, note: note }
+    end
   end
 
   urls
@@ -122,10 +128,11 @@ urls.each_with_index do |link, index|
   articles << {
     title: title,
     url: link[:url],
-    date: article_date
+    date: article_date,
+    note: link[:note]
   }
 
-  puts "✓ #{title}#{is_new ? ' (new)' : ''}"
+  puts "✓ #{title}#{is_new ? ' (new)' : ''}#{link[:note] ? ' [has note]' : ''}"
   sleep 1 # Be polite to servers
 end
 
@@ -143,6 +150,10 @@ File.open(ARTICLES_FILE, 'w') do |f|
     f.puts "- title: \"#{escaped_title}\""
     f.puts "  url: \"#{article[:url]}\""
     f.puts "  date: #{article[:date]}"
+    if article[:note] && !article[:note].empty?
+      escaped_note = article[:note].gsub('"', '\\"')
+      f.puts "  note: \"#{escaped_note}\""
+    end
     f.puts
   end
 end
