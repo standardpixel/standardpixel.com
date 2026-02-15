@@ -355,6 +355,7 @@ list-style:disc;
 	font-size: 36px;
 	margin-bottom: 10px;
 	color: #333;
+	line-height: 1.3em;
 }
 
 .latest-post h3 a {
@@ -411,6 +412,7 @@ list-style:disc;
 .archive-post h3 {
 	margin: 5px 0 10px 0;
 	font-size: 28px;
+	line-height: 1.3em;
 }
 
 .archive-post p {
@@ -431,6 +433,7 @@ list-style:disc;
 .post-header h1 {
 	font-size: 42px;
 	margin-bottom: 10px;
+	line-height: 1.3em;
 }
 
 .post-back-link {
