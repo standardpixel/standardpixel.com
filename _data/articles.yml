@@ -1,0 +1,4 @@
+- title: "Example Article"
+  url: "https://example.com"
+  date: 2026-02-14
+  description: "Add your favorite articles here by editing _data/articles.yml"
