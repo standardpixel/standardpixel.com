@@ -7,6 +7,9 @@ baseurl: ""
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title.html
 
+plugins:
+  - jekyll-feed
+
 exclude:
   - Gemfile
   - Gemfile.lock
