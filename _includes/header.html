@@ -8,5 +8,54 @@
 		</div>
 		<h2>Standard Pixel</h2>
 	</div>
-	<h1{% if page.header_style %} style="{{ page.header_style }}"{% endif %}>{% if page.header_text %}{{ page.header_text }}{% else %}Hello, I am Eric Gelinas. StandardPixel.com is my website. A website is like TikTok for people who remember Laser Disks{% endif %}</h1>
+	<h1 id="site-tagline"{% if page.header_style %} style="{{ page.header_style }}"{% endif %}>{% if page.header_text %}{{ page.header_text }}{% else %}Hello, I am Eric Gelinas. StandardPixel.com is my website. A website is like TikTok for people who remember Laser Disks{% endif %}</h1>
 </header>
+
+{% unless page.header_text %}
+<script>
+(function() {
+	const modernThings = [
+		'TikTok',
+		'Discord',
+		'Spotify',
+		'Instagram Reels',
+		'ChatGPT',
+		'Notion',
+		'Slack',
+		'streaming on Twitch',
+		'YouTube',
+		'podcasts',
+		'Netflix'
+	];
+
+	const ninetiesThings = [
+		'Laser Discs',
+		'VHS tapes',
+		'Blockbuster',
+		'dial-up modems',
+		'CD-ROMs',
+		'AOL',
+		'Netscape Navigator',
+		'pagers',
+		'Tamagotchis',
+		'MiniDiscs',
+		'floppy disks',
+		'Windows 95',
+		'Walkmans',
+		'calling 411 for information'
+	];
+
+	function getRandomItem(array) {
+		return array[Math.floor(Math.random() * array.length)];
+	}
+
+	const modernThing = getRandomItem(modernThings);
+	const ninetiesThing = getRandomItem(ninetiesThings);
+
+	const tagline = document.getElementById('site-tagline');
+	if (tagline) {
+		tagline.textContent = `Hello, I am Eric Gelinas. StandardPixel.com is my website. A website is like ${modernThing} for people who remember ${ninetiesThing}`;
+	}
+})();
+</script>
+{% endunless %}
