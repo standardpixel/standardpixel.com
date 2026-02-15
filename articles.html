@@ -1,0 +1,33 @@
+---
+layout: default
+title: "Articles - StandardPixel.com"
+header_text: "Articles I'm Reading"
+header_style: "text-align:right;"
+---
+
+<section style="padding: 20px;">
+	<h3>Interesting Articles</h3>
+	<p class="subtle">A collection of articles I've found interesting and worth sharing.</p>
+
+	{% if site.data.articles.size > 0 %}
+		<ul style="list-style: disc; margin-left: 20px; padding-left: 20px;">
+		{% for article in site.data.articles %}
+			<li style="margin-bottom: 15px;">
+				<a href="{{ article.url }}" target="_blank" rel="noopener noreferrer">{{ article.title }}</a>
+				{% if article.date %}
+					<span style="color: #999; font-size: 0.9em;"> – {{ article.date | date: "%B %d, %Y" }}</span>
+				{% endif %}
+				{% if article.description %}
+					<p style="margin: 5px 0 0 0; color: #666;">{{ article.description }}</p>
+				{% endif %}
+			</li>
+		{% endfor %}
+		</ul>
+	{% else %}
+		<p>No articles yet. Add some by editing <code>_data/articles.yml</code></p>
+	{% endif %}
+</section>
+
+<section class="link-off">
+	<a href="/">...off to StandardPixel.com...</a>
+</section>
