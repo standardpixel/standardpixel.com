@@ -17,8 +17,8 @@ header_style: "text-align:right;"
 				{% if article.date %}
 					<span style="color: #999; font-size: 0.9em;"> – {{ article.date | date: "%B %d, %Y" }}</span>
 				{% endif %}
-				{% if article.description %}
-					<p style="margin: 5px 0 0 0; color: #666;">{{ article.description }}</p>
+				{% if article.note %}
+					<p style="margin: 5px 0 0 0; color: #666;">{{ article.note }}</p>
 				{% endif %}
 			</li>
 		{% endfor %}
