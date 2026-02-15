@@ -1,0 +1,12 @@
+<header>
+	<div id='logo'{% if page.show_home_link %} onclick="document.location.href='/'"{% endif %}>
+		<div class="illustration">
+			<div class="block-1 first"></div>
+			<div class="block-2"></div>
+			<div class="block-3"></div>
+			<div class="block-4"></div>
+		</div>
+		<h2>Standard Pixel</h2>
+	</div>
+	<h1{% if page.header_style %} style="{{ page.header_style }}"{% endif %}>{% if page.header_text %}{{ page.header_text }}{% else %}Hello, I am Eric Gelinas. StandardPixel.com is where I showcase the many <i>things</i> which I "fave", "like", "+1", and otherwise curate online.{% endif %}</h1>
+</header>

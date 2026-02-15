@@ -338,3 +338,102 @@ list-style:disc;
 .summer nav ul li:hover, .summer nav ul li:hover a {
 	color:#fff;
 }
+
+/*
+*  Blog post styles
+*/
+
+/* Latest post on homepage */
+.latest-post {
+	padding: 20px;
+	margin-bottom: 20px;
+	border-bottom: solid 3px #eee;
+}
+
+.latest-post h3 {
+	font-size: 36px;
+	margin-bottom: 10px;
+	color: #333;
+}
+
+.latest-post h3 a {
+	color: #333;
+	text-decoration: none;
+}
+
+.latest-post h3 a:hover {
+	color: #0988A9;
+}
+
+.post-meta {
+	color: #999;
+	font-size: 14px;
+	margin-bottom: 20px;
+}
+
+.post-meta time {
+	font-style: italic;
+}
+
+.more-posts-link {
+	margin-top: 20px;
+	font-size: 16px;
+}
+
+/* Blog archive page */
+.blog-archive {
+	padding: 20px;
+}
+
+.blog-archive h1 {
+	font-size: 42px;
+	margin-bottom: 30px;
+}
+
+.archive-post {
+	margin-bottom: 30px;
+	padding-bottom: 20px;
+	border-bottom: solid 1px #eee;
+}
+
+.archive-post:last-child {
+	border-bottom: none;
+}
+
+.archive-post time {
+	color: #999;
+	font-size: 12px;
+	display: block;
+	margin-bottom: 5px;
+}
+
+.archive-post h3 {
+	margin: 5px 0 10px 0;
+	font-size: 28px;
+}
+
+.archive-post p {
+	color: #666;
+}
+
+/* Individual post page */
+.post-content {
+	padding: 20px;
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+.post-header {
+	margin-bottom: 30px;
+}
+
+.post-header h1 {
+	font-size: 42px;
+	margin-bottom: 10px;
+}
+
+.post-back-link {
+	margin-top: 40px;
+	padding-top: 20px;
+	border-top: solid 1px #eee;
+}

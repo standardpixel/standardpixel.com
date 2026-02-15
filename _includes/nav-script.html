@@ -1,0 +1,49 @@
+<script>
+	"use strict";
+	(function() {
+
+		function parentClassHas(startingElement, className, depth) {
+
+        var last  = startingElement;
+
+        for (var i=0; (depth||10) > i && last; i++) {
+
+          if (typeof last.classList === "object" && last.classList.contains(className)) {
+
+            return last;
+
+          } else if (last && last.className && typeof last.className === "string" && typeof last.className.indexOf === "function" && (last.className && last.className.indexOf(className)) > -1) {
+
+            return last;
+
+          }
+
+          last = last.parentNode;
+
+        }
+
+        return null;
+      }
+
+		var navElement = document.querySelector("#container nav");
+
+		if (navElement) {
+			document.getElementById('since-1997').innerHTML = (new Date().getFullYear())-1997;
+
+			navElement.addEventListener("click", function(eventClick) {
+
+				var isInNav = parentClassHas(eventClick.target, 'nav__item', 3);
+
+				var link = isInNav.querySelector("a");
+
+				if (isInNav && link) {
+
+					location.href = link.href;
+
+				}
+
+			});
+		}
+
+	})();
+</script>

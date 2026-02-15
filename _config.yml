@@ -1,0 +1,16 @@
+title: "StandardPixel.com"
+description: "Curation of things by Eric Gelinas"
+author: "Eric Gelinas"
+url: "https://standardpixel.com"
+baseurl: ""
+
+markdown: kramdown
+permalink: /blog/:year/:month/:day/:title.html
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - .gitignore
+  - vendor
+  - .claude
