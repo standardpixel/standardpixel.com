@@ -156,19 +156,15 @@ list-style:disc;
 	width:18px;
 	height:18px;
 	margin-top:1px;
-	border-radius:0px;
-	transition: transform 0.2s ease;
+	border-radius:3px;
 }
 .domestica header #logo .illustration div.first {
 	margin-top:0;
 }
 .domestica header #logo .illustration .block-1 {background-color:#0988A9;}
-.domestica header #logo .illustration .block-2 {background-color:#07719a;}
-.domestica header #logo .illustration .block-3 {background-color:#065f8d;}
-.domestica header #logo .illustration .block-4 {background-color:#044d71;}
-.domestica header #logo:hover .illustration div {
-	transform: scale(1.1);
-}
+.domestica header #logo .illustration .block-2 {background-color:rgba(118,118,118,1);}
+.domestica header #logo .illustration .block-3 {background-color:rgba(79,79,79,1);}
+.domestica header #logo .illustration .block-4 {background-color:rgba(28,28,28,1);}
 .domestica header #logo h2 {
 	font-size:47px;
 	font-weight:500;
