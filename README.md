@@ -56,21 +56,23 @@ Your content here in Markdown...
 Articles are synced from your Obsidian vault at:
 `~/Library/Mobile Documents/iCloud~md~obsidian/Documents/evg/Links.md`
 
-### Syncing Articles
+### Automatic Syncing
+
+A **pre-commit hook** automatically syncs articles before each commit:
 
 1. Add new links to the top of `Links.md` in Obsidian (plain URLs or markdown links)
+2. Make any commit to this repo
+3. The hook runs `./sync-articles.rb` automatically
+4. If articles changed, `_data/articles.yml` is staged and included in your commit
 
-2. Run the sync script:
-   ```bash
-   ./sync-articles.rb
-   ```
+No manual steps needed! Just add links to Obsidian and commit as normal.
 
-3. Commit and push the changes:
-   ```bash
-   git add _data/articles.yml
-   git commit -m "Update articles from Obsidian"
-   git push origin master
-   ```
+### Manual Syncing
+
+You can also run the sync script manually:
+```bash
+./sync-articles.rb
+```
 
 The script will:
 - Read URLs from your Links.md file
