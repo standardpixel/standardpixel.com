@@ -56,16 +56,31 @@ Your content here in Markdown...
 Articles are synced from your Obsidian vault at:
 `~/Library/Mobile Documents/iCloud~md~obsidian/Documents/evg/Links.md`
 
+### Quick Link Capture Plugin
+
+A custom Obsidian plugin is installed to quickly capture links:
+
+1. Click the link icon (🔗) in the Obsidian ribbon (left sidebar)
+2. Paste a URL in the modal that appears
+3. Press Enter or click "Add Link"
+4. The link is added to the top of Links.md
+
+**Plugin location**: `.obsidian/plugins/quick-link-capture/`
+
+Enable it in: Settings → Community Plugins → Toggle "Quick Link Capture" ON
+
 ### Automatic Syncing
 
 A **pre-commit hook** automatically syncs articles before each commit:
 
-1. Add new links to the top of `Links.md` in Obsidian (plain URLs or markdown links)
+1. Add new links to the top of `Links.md` in Obsidian (using the plugin or manually)
 2. Make any commit to this repo
 3. The hook runs `./sync-articles.rb` automatically
 4. If articles changed, `_data/articles.yml` is staged and included in your commit
 
 No manual steps needed! Just add links to Obsidian and commit as normal.
+
+**How dates work**: Each article gets the date it was first synced. Existing articles keep their original dates on subsequent syncs.
 
 ### Manual Syncing
 
