@@ -1,0 +1,25 @@
+<head>
+	<meta charset="utf-8">
+
+	<!-- Dear reader, this code was mostly written in 2011. Please judge
+	     code conventions and syntax accordingy. -->
+
+	<title>{{ page.title | default: site.title }}</title>
+	<meta name="description" content="{{ page.description | default: site.description }}">
+	<meta name="author" content="{{ site.author }}">
+
+	<meta name="viewport" content="width=device-width, initial-scale=0.9">
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<script type="text/javascript" src="http://use.typekit.com/tkt0mro.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+	<link rel="stylesheet" href="/style/style_domestica_summer.css" type="text/css" media="screen" charset="utf-8">
+
+	{% if page.layout == "post" %}
+	<link rel="canonical" href="{{ site.url }}{{ page.url }}" />
+	{% endif %}
+</head>

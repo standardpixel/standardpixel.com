@@ -1,0 +1,19 @@
+<!doctype html>
+{% include head.html %}
+
+<body class="domestica summer">
+
+	<div id="container"{% if page.container_style %} style="{{ page.container_style }}"{% endif %}>
+		{% include header.html %}
+
+		{{ content }}
+
+		{% include footer.html %}
+	</div>
+
+	{% include nav-script.html %}
+
+	{% include analytics.html %}
+
+</body>
+</html>
