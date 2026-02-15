@@ -1,29 +1,13 @@
 ---
 layout: post
-title: "Welcome to My Blog"
+title: "Zsh tooling to get closer to the promise of agents"
 date: 2026-02-14 10:00:00 -0800
 ---
 
-This is my first blog post using Jekyll on StandardPixel.com.
+I've automated my dev workflow with a zsh function that ties together git worktrees + Linear + Claude Code. One command now: parses Linear ticket from branch name → creates worktree → auto-claims ticket via GraphQL → copies dev assets (node_modules, .env, etc) → opens Claude Code and Zed.
 
-I'll be writing about web development, design, and other things I find interesting. This site has been around since 2011, but I've finally added a proper blogging system using Jekyll.
+I can tackle 1-3 bug fix, prototype, or otherwise simple tasks concurrently (sometimes up to 5 for straightforward work). After months of working with this I realized opening Zed automatically was just a security blanket. Removed it from the automation - now I only launch it with `!zed .` from Claude's prompt when actually needed.
 
-## Why Jekyll?
+This lets me keep all concurrent worktrees visible on screen. It can be draining to context-switch between multiple AI-assisted tasks. The tricky part is predicting which tasks work well in this "AI batch mode" vs requiring traditional focused coding. Some tickets that look simple need deep architectural thinking, while complex-seeming ones are just tedious work Claude handles beautifully.
 
-Jekyll is a great choice for a static personal website because:
-
-- It's simple and lightweight
-- GitHub Pages has native support
-- I can write posts in Markdown
-- No database or server-side complexity
-
-## What's Next?
-
-I'm planning to write about:
-
-- Web development experiences and lessons learned
-- Interface design and user experience
-- Technology trends and tools
-- Personal projects and experiments
-
-Stay tuned for more posts!
+Still learning how to describe and categorize work by AI-suitability rather than just complexity and communicate this to stakeholders.
