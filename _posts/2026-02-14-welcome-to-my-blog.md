@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Zsh tooling to get closer to the promise of agents"
+title: "Running five tasks at once with Claude Code and git worktrees"
 date: 2026-02-14 10:00:00 -0800
 ---
 
