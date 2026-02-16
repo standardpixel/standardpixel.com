@@ -320,31 +320,36 @@ list-style:disc;
 
 /* footer */
 .domestica footer {
-	position: relative;
-	padding: 20px;
+	padding: 30px 20px;
 	border-top: solid 3px #eee;
-	font-size: 11px;
+	font-size: 12px;
+	text-align: center;
+	color: #666;
 }
 
-.domestica footer .cc-text {
-	display: block;
-	margin-left: 100px;
-	width: 80%;
-}
-
-.domestica footer .cc-text p {
-	padding: 0;
+.domestica footer p {
 	margin: 0;
+	line-height: 1.8em;
+}
+
+.domestica footer a {
+	color: #0988A9;
+}
+
+.domestica footer img {
+	display: inline-block;
+	vertical-align: middle;
 }
 
 @media (max-width: 480px) {
 	.domestica footer {
-		padding: 15px;
+		padding: 20px 15px;
+		font-size: 11px;
 	}
 
-	.domestica footer .cc-text {
-		margin-left: 0;
-		width: 100%;
+	.domestica footer img {
+		display: block;
+		margin: 0 auto 10px;
 	}
 }
 
