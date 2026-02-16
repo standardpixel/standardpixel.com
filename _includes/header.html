@@ -1,4 +1,8 @@
 <header>
+	<button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+		<span class="theme-icon">☀️</span>
+		<span class="theme-text">Light</span>
+	</button>
 	<div id='logo'{% if page.show_home_link %} onclick="document.location.href='/'"{% endif %}>
 		<div class="illustration">
 			<div class="block-1 first"></div>
@@ -13,6 +17,58 @@
 	</div>
 	<h1 id="site-tagline"{% if page.header_style %} style="{{ page.header_style }}"{% endif %}>{% if page.header_text %}{{ page.header_text }}{% else %}Hello, I am Eric Gelinas. StandardPixel.com is my website. A website is like TikTok for people who remember Laser Disks{% endif %}</h1>
 </header>
+
+<script>
+// Dark mode toggle with system preference detection
+(function() {
+	const toggle = document.getElementById('theme-toggle');
+	const icon = toggle.querySelector('.theme-icon');
+	const text = toggle.querySelector('.theme-text');
+	const html = document.documentElement;
+
+	// Get saved theme or detect system preference
+	function getPreferredTheme() {
+		const saved = localStorage.getItem('theme');
+		if (saved) return saved;
+
+		return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+	}
+
+	// Apply theme
+	function applyTheme(theme) {
+		if (theme === 'dark') {
+			html.setAttribute('data-theme', 'dark');
+			icon.textContent = '🌙';
+			text.textContent = 'Dark';
+		} else {
+			html.setAttribute('data-theme', 'light');
+			icon.textContent = '☀️';
+			text.textContent = 'Light';
+		}
+	}
+
+	// Toggle theme
+	function toggleTheme() {
+		const current = html.getAttribute('data-theme') || getPreferredTheme();
+		const next = current === 'dark' ? 'light' : 'dark';
+		applyTheme(next);
+		localStorage.setItem('theme', next);
+	}
+
+	// Initialize
+	applyTheme(getPreferredTheme());
+
+	// Listen for toggle clicks
+	toggle.addEventListener('click', toggleTheme);
+
+	// Listen for system preference changes
+	window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+		if (!localStorage.getItem('theme')) {
+			applyTheme(e.matches ? 'dark' : 'light');
+		}
+	});
+})();
+</script>
 
 {% unless page.header_text %}
 <script>
