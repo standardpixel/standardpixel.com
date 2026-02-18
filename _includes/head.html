@@ -24,4 +24,7 @@
 	{% endif %}
 
 	{% feed_meta %}
+	{% if page.url == "/articles.html" %}
+	<link rel="alternate" type="application/rss+xml" title="{{ site.title }} - Articles" href="{{ site.url }}/articles.xml">
+	{% endif %}
 </head>

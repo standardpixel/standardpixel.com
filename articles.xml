@@ -1,0 +1,23 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>{{ site.title }} - Articles</title>
+    <link>{{ site.url }}/articles.html</link>
+    <atom:link href="{{ site.url }}/articles.xml" rel="self" type="application/rss+xml"/>
+    <description>Interesting articles curated by {{ site.author }}</description>
+    <language>en-us</language>
+    {% assign articles_reversed = site.data.articles | reverse %}
+    {% for article in articles_reversed %}
+    <item>
+      <title>{{ article.title | xml_escape }}</title>
+      <link>{{ article.url }}</link>
+      <guid isPermaLink="true">{{ article.url }}</guid>
+      {% if article.date %}<pubDate>{{ article.date | date_to_rfc822 }}</pubDate>{% endif %}
+      <description>{% if article.note %}{{ article.note | xml_escape }}{% else %}{{ article.title | xml_escape }}{% endif %}</description>
+    </item>
+    {% endfor %}
+  </channel>
+</rss>
