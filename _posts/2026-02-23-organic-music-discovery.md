@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Organic music discovery"
+title: "A new way to find bands the old way"
 date: 2026-02-23 10:00:00 -0800
 ---
 
