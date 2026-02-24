@@ -4,7 +4,7 @@ title: "A new way to find bands the old way"
 date: 2026-02-23 10:00:00 -0800
 ---
 
-There was a time in my life when I went to a lot of shows. Not just to see the headliner, the whole night. I would show up early enough to catch whoever was opening, because that was how you found new music. You liked a band, you went to see them, and you walked out having discovered two more. Sometimes I wouldn't make it to see the headliner because I was satisfied with the show. I remember that happening when I discovered the band Minus the Bear. I was so happy with their performance opening that I just went home afterwords.
+There was a time in my life when I went to a lot of shows. Not just to see the headliner, the whole night. I would show up early enough to catch whoever was opening, because that was how you found new music. You liked a band, you went to see them, and you walked out having discovered two more. Sometimes I wouldn't make it to see the headliner because I was satisfied with the show. I remember that happening when I discovered the band [Minus the Bear](https://music.apple.com/us/artist/minus-the-bear/13742367). I was so happy with their performance opening that I just went home afterwords.
 
 That doesn't happen as much for me now. I still love music, but I just don't have time to get out to shows these days. So I end up relying on [KCRW](https://www.kcrw.com) (which is excellent if you don't listen to them) and streaming recommendations (which are fine). I miss that feeling of finding a small local unsigned (possibly not even on Apple Music yet) band who managed to get on the bill with a band who is signed.
 
