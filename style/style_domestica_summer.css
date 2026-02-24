@@ -191,6 +191,7 @@ list-style:disc;
 	margin: 0;
 	margin-bottom: 10px;
 	user-select: none;
+	cursor: pointer;
 }
 
 .domestica header #logo .illustration {
