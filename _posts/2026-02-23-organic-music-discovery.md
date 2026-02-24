@@ -12,8 +12,8 @@ So I built [bands.standardpixel.com](https://bands.standardpixel.com).
 
 Give it a band or artist name and it maps out the bands they have shared a bill with. The theory is: independent bands have more say in who they tour with. When a festival organizer books around an artist you love, they are making a curatorial choice. These are human decisions, not statistical ones. Not better, but different. Another way of finding.
 
-It is not perfect. Plenty of bands end up on the same bill for reasons that have nothing to do with sound. But, I can't promise it will be better than going to shows for finding bands.
+It is not perfect. Plenty of bands end up on the same bill for reasons that have nothing to do with sound. But hey, it's good enough for rock and roll.
 
-Under the hood it is built with Next.js and pulls data from [MusicBrainz](https://musicbrainz.org), which is a gem of a data source. When you search for an artist, a Python script queries the MusicBrainz API to find touring relationships, then caches the results in PostgreSQL so you are not waiting two minutes every time someone searches for a band. A WebSocket connection gives you real-time progress while it works, which felt important because the first version just sat there silently and it was unnerving.
+Under the hood it is built with Next.js and pulls data from [MusicBrainz](https://musicbrainz.org), which is a gem of a data source. When you search for an artist, a Python script queries the MusicBrainz API to find touring relationships, then caches the results in PostgreSQL so you are not waiting two minutes every time someone searches for a band. A WebSocket connection gives you real-time progress while it works. MusicBrainz is generous but it can take time to query within their rate limit. This allows me to keep the user updated on progress and I respectfully get data from MusicBrainz.
 
 The results come back as a network graph you can explore, with Apple Music players embedded so you can listen immediately to what you find (if they are on there). Each artist gets a shareable URL so if you find something good you can pass it along.
