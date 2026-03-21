@@ -351,6 +351,7 @@ list-style:disc;
 
 .domestica nav ul li {
 	display: inline-block;
+	position: relative;
 	width: 24%;
 	max-width: 24%;
 	height: 100px;
@@ -398,6 +399,15 @@ list-style:disc;
 	color: var(--color-heading);
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
 	letter-spacing: -0.015em;
+}
+
+.domestica nav ul li a::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
 }
 
 .domestica nav ul li:hover a {
