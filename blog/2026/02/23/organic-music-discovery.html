@@ -1,0 +1,221 @@
+<!doctype html>
+<head>
+	<meta charset="utf-8">
+
+	<!-- Dear reader, this code was mostly written in 2011. Please judge
+	     code conventions and syntax accordingy. -->
+
+	<title>A new way to find bands the old way</title>
+	<meta name="description" content="Curation of things by Eric Gelinas">
+	<meta name="author" content="Eric Gelinas">
+
+	<meta name="viewport" content="width=device-width, initial-scale=0.9">
+
+	<!-- Open Graph / Social Media -->
+	<meta property="og:title" content="A new way to find bands the old way">
+	<meta property="og:description" content="Curation of things by Eric Gelinas">
+	<meta property="og:type" content="article">
+	<meta property="og:url" content="https://standardpixel.com/blog/2026/02/23/organic-music-discovery.html">
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="A new way to find bands the old way">
+	<meta name="twitter:description" content="Curation of things by Eric Gelinas">
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<script type="text/javascript" src="http://use.typekit.com/tkt0mro.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+	<link rel="stylesheet" href="/style/style_domestica_summer.css" type="text/css" media="screen" charset="utf-8">
+
+	
+	<link rel="canonical" href="https://standardpixel.com/blog/2026/02/23/organic-music-discovery.html" />
+	
+
+	<link type="application/atom+xml" rel="alternate" href="https://standardpixel.com/feed.xml" title="StandardPixel.com" />
+	
+</head>
+
+
+<body class="domestica summer">
+
+	<div id="container">
+		<header>
+	<div id='logo' onclick="document.location.href='/'">
+		<div class="illustration">
+			<div class="block-1 first"></div>
+			<div class="block-2"></div>
+			<div class="block-3"></div>
+			<div class="block-4"></div>
+		</div>
+		<div class="logo-text">
+			<span class="logo-standard">Standard</span>
+			<span class="logo-pixel">Pixel</span>
+		</div>
+	</div>
+	<h1 id="site-tagline">Hello, I am Eric Gelinas. StandardPixel.com is my website. A website is like TikTok for people who remember Laser Disks</h1>
+</header>
+
+
+<script>
+(function() {
+	const modernThings = [
+		'TikTok',
+		'Discord',
+		'Spotify',
+		'Instagram Reels',
+		'ChatGPT',
+		'Notion',
+		'Slack',
+		'streaming on Twitch',
+		'YouTube',
+		'podcasts',
+		'Netflix'
+	];
+
+	const ninetiesThings = [
+		'Laser Discs',
+		'VHS tapes',
+		'Blockbuster',
+		'dial-up modems',
+		'CD-ROMs',
+		'AOL',
+		'Netscape Navigator',
+		'pagers',
+		'Tamagotchis',
+		'MiniDiscs',
+		'floppy disks',
+		'Windows 95',
+		'Walkmans',
+		'calling 411 for information',
+		'paging your friends 911'
+	];
+
+	function getRandomItem(array) {
+		return array[Math.floor(Math.random() * array.length)];
+	}
+
+	const modernThing = getRandomItem(modernThings);
+	const ninetiesThing = getRandomItem(ninetiesThings);
+
+	const tagline = document.getElementById('site-tagline');
+	if (tagline) {
+		tagline.textContent = `Hello, I am Eric Gelinas. StandardPixel.com is my website. A website is like ${modernThing} for people who remember ${ninetiesThing}`;
+	}
+})();
+</script>
+
+
+
+		<section class="post-content">
+  <div class="post-header">
+    <h1>A new way to find bands the old way</h1>
+    <div class="post-meta">
+      <time datetime="2026-02-23T10:00:00-08:00">
+        February 23, 2026
+      </time>
+    </div>
+  </div>
+
+  <p>There was a time in my life when I went to a lot of shows. Not just to see the headliner, the whole night. I would show up early enough to catch whoever was opening, because that was how you found new music. You liked a band, you went to see them, and you walked out having discovered two more. Sometimes I wouldn’t make it to see the headliner because I was satisfied with the show. I remember that happening when I discovered the band <a href="https://music.apple.com/us/artist/minus-the-bear/13742367">Minus the Bear</a>. I was so happy with their performance opening that I just went home afterwords.</p>
+
+<p>That doesn’t happen as much for me now. I still love music, but I just don’t have time to get out to shows these days. So I end up relying on <a href="https://www.kcrw.com">KCRW</a> (which is excellent if you don’t listen to them) and streaming recommendations (which are fine). I miss that feeling of finding a small local unsigned (possibly not even on Apple Music yet) band who managed to get on the bill with a band who is signed.</p>
+
+<p>So I built <a href="https://bands.standardpixel.com">bands.standardpixel.com</a>.</p>
+
+<p>Give it a band or artist name and it maps out the bands they have shared a bill with. The theory is: independent bands have more say in who they tour with. When a festival organizer books around an artist you love, they are making a curatorial choice. These are human decisions, not statistical ones. Not better, but different. Another way of finding.</p>
+
+<p>It is not perfect. Plenty of bands end up on the same bill for reasons that have nothing to do with sound. But hey, it’s good enough for rock and roll.</p>
+
+<p>Under the hood it is built with Next.js and pulls data from <a href="https://musicbrainz.org">MusicBrainz</a>, which is a gem of a data source. When you search for an artist, a Python script queries the MusicBrainz API to find touring relationships, then caches the results in PostgreSQL so you are not waiting two minutes every time someone searches for a band. A WebSocket connection gives you real-time progress while it works. MusicBrainz is generous but it can take time to query within their rate limit. This allows me to keep the user updated on progress and I respectfully get data from MusicBrainz.</p>
+
+<p>The results come back as a network graph you can explore, with Apple Music players embedded so you can listen immediately to what you find (if they are on there). Each artist gets a shareable URL so if you find something good you can pass it along.</p>
+
+
+  <div class="post-back-link">
+    <a href="/blog/">← Back to all posts</a>
+  </div>
+</section>
+
+
+		<footer>
+	<p>
+		<a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/3.0/">
+			<img alt="Creative Commons License" style="border-width:0; vertical-align: middle; margin-right: 8px;" src="https://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png" />
+		</a>
+		Content by <a href="https://standardpixel.com">Eric Gelinas</a> is licensed under
+		<a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA 3.0</a>
+		&middot;
+		<a href="/feed.xml">RSS</a>
+	</p>
+</footer>
+
+	</div>
+
+	<script>
+	"use strict";
+	(function() {
+
+		function parentClassHas(startingElement, className, depth) {
+
+        var last  = startingElement;
+
+        for (var i=0; (depth||10) > i && last; i++) {
+
+          if (typeof last.classList === "object" && last.classList.contains(className)) {
+
+            return last;
+
+          } else if (last && last.className && typeof last.className === "string" && typeof last.className.indexOf === "function" && (last.className && last.className.indexOf(className)) > -1) {
+
+            return last;
+
+          }
+
+          last = last.parentNode;
+
+        }
+
+        return null;
+      }
+
+		var navElement = document.querySelector("#container nav");
+
+		if (navElement) {
+			document.getElementById('since-1997').innerHTML = (new Date().getFullYear())-1997;
+
+			navElement.addEventListener("click", function(eventClick) {
+
+				var isInNav = parentClassHas(eventClick.target, 'nav__item', 3);
+
+				var link = isInNav.querySelector("a");
+
+				if (isInNav && link) {
+
+					location.href = link.href;
+
+				}
+
+			});
+		}
+
+	})();
+</script>
+
+
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-3495577-1', 'standardpixel.com');
+  ga('send', 'pageview');
+</script>
+
+
+</body>
+</html>

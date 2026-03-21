@@ -1,0 +1,215 @@
+<!doctype html>
+<head>
+	<meta charset="utf-8">
+
+	<!-- Dear reader, this code was mostly written in 2011. Please judge
+	     code conventions and syntax accordingy. -->
+
+	<title>Running five tasks at once with Claude Code and git worktrees</title>
+	<meta name="description" content="Curation of things by Eric Gelinas">
+	<meta name="author" content="Eric Gelinas">
+
+	<meta name="viewport" content="width=device-width, initial-scale=0.9">
+
+	<!-- Open Graph / Social Media -->
+	<meta property="og:title" content="Running five tasks at once with Claude Code and git worktrees">
+	<meta property="og:description" content="Curation of things by Eric Gelinas">
+	<meta property="og:type" content="article">
+	<meta property="og:url" content="https://standardpixel.com/blog/2026/02/14/welcome-to-my-blog.html">
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="Running five tasks at once with Claude Code and git worktrees">
+	<meta name="twitter:description" content="Curation of things by Eric Gelinas">
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<script type="text/javascript" src="http://use.typekit.com/tkt0mro.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+	<link rel="stylesheet" href="/style/style_domestica_summer.css" type="text/css" media="screen" charset="utf-8">
+
+	
+	<link rel="canonical" href="https://standardpixel.com/blog/2026/02/14/welcome-to-my-blog.html" />
+	
+
+	<link type="application/atom+xml" rel="alternate" href="https://standardpixel.com/feed.xml" title="StandardPixel.com" />
+	
+</head>
+
+
+<body class="domestica summer">
+
+	<div id="container">
+		<header>
+	<div id='logo' onclick="document.location.href='/'">
+		<div class="illustration">
+			<div class="block-1 first"></div>
+			<div class="block-2"></div>
+			<div class="block-3"></div>
+			<div class="block-4"></div>
+		</div>
+		<div class="logo-text">
+			<span class="logo-standard">Standard</span>
+			<span class="logo-pixel">Pixel</span>
+		</div>
+	</div>
+	<h1 id="site-tagline">Hello, I am Eric Gelinas. StandardPixel.com is my website. A website is like TikTok for people who remember Laser Disks</h1>
+</header>
+
+
+<script>
+(function() {
+	const modernThings = [
+		'TikTok',
+		'Discord',
+		'Spotify',
+		'Instagram Reels',
+		'ChatGPT',
+		'Notion',
+		'Slack',
+		'streaming on Twitch',
+		'YouTube',
+		'podcasts',
+		'Netflix'
+	];
+
+	const ninetiesThings = [
+		'Laser Discs',
+		'VHS tapes',
+		'Blockbuster',
+		'dial-up modems',
+		'CD-ROMs',
+		'AOL',
+		'Netscape Navigator',
+		'pagers',
+		'Tamagotchis',
+		'MiniDiscs',
+		'floppy disks',
+		'Windows 95',
+		'Walkmans',
+		'calling 411 for information',
+		'paging your friends 911'
+	];
+
+	function getRandomItem(array) {
+		return array[Math.floor(Math.random() * array.length)];
+	}
+
+	const modernThing = getRandomItem(modernThings);
+	const ninetiesThing = getRandomItem(ninetiesThings);
+
+	const tagline = document.getElementById('site-tagline');
+	if (tagline) {
+		tagline.textContent = `Hello, I am Eric Gelinas. StandardPixel.com is my website. A website is like ${modernThing} for people who remember ${ninetiesThing}`;
+	}
+})();
+</script>
+
+
+
+		<section class="post-content">
+  <div class="post-header">
+    <h1>Running five tasks at once with Claude Code and git worktrees</h1>
+    <div class="post-meta">
+      <time datetime="2026-02-14T10:00:00-08:00">
+        February 14, 2026
+      </time>
+    </div>
+  </div>
+
+  <p>I’ve automated my dev workflow with a zsh function that ties together git worktrees + Linear + Claude Code. One command now: parses Linear ticket from branch name → creates worktree → auto-claims ticket via GraphQL → copies dev assets (node_modules, .env, etc) → opens Claude Code and Zed.</p>
+
+<p>I can tackle 1-3 bug fix, prototype, or otherwise simple tasks concurrently (sometimes up to 5 for straightforward work). After months of working with this I realized opening Zed automatically was just a security blanket. Removed it from the automation - now I only launch it with <code class="language-plaintext highlighter-rouge">!zed .</code> from Claude’s prompt when actually needed.</p>
+
+<p>This lets me keep all concurrent worktrees visible on screen. It can be draining to context-switch between multiple AI-assisted tasks. The tricky part is predicting which tasks work well in this “AI batch mode” vs requiring traditional focused coding. Some tickets that look simple need deep architectural thinking, while complex-seeming ones are just tedious work Claude handles beautifully.</p>
+
+<p>Still learning how to describe and categorize work by AI-suitability rather than just complexity and communicate this to stakeholders.</p>
+
+
+  <div class="post-back-link">
+    <a href="/blog/">← Back to all posts</a>
+  </div>
+</section>
+
+
+		<footer>
+	<p>
+		<a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/3.0/">
+			<img alt="Creative Commons License" style="border-width:0; vertical-align: middle; margin-right: 8px;" src="https://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png" />
+		</a>
+		Content by <a href="https://standardpixel.com">Eric Gelinas</a> is licensed under
+		<a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA 3.0</a>
+		&middot;
+		<a href="/feed.xml">RSS</a>
+	</p>
+</footer>
+
+	</div>
+
+	<script>
+	"use strict";
+	(function() {
+
+		function parentClassHas(startingElement, className, depth) {
+
+        var last  = startingElement;
+
+        for (var i=0; (depth||10) > i && last; i++) {
+
+          if (typeof last.classList === "object" && last.classList.contains(className)) {
+
+            return last;
+
+          } else if (last && last.className && typeof last.className === "string" && typeof last.className.indexOf === "function" && (last.className && last.className.indexOf(className)) > -1) {
+
+            return last;
+
+          }
+
+          last = last.parentNode;
+
+        }
+
+        return null;
+      }
+
+		var navElement = document.querySelector("#container nav");
+
+		if (navElement) {
+			document.getElementById('since-1997').innerHTML = (new Date().getFullYear())-1997;
+
+			navElement.addEventListener("click", function(eventClick) {
+
+				var isInNav = parentClassHas(eventClick.target, 'nav__item', 3);
+
+				var link = isInNav.querySelector("a");
+
+				if (isInNav && link) {
+
+					location.href = link.href;
+
+				}
+
+			});
+		}
+
+	})();
+</script>
+
+
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-3495577-1', 'standardpixel.com');
+  ga('send', 'pageview');
+</script>
+
+
+</body>
+</html>
