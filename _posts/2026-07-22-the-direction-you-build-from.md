@@ -64,6 +64,6 @@ I would not bet against that, only because it is the thing Apple has historicall
 
 I want to be clear that I am not proposing terminology here. I do not have it. User driven and systems driven are the closest I have gotten and I am not satisfied with either one, partly because they both sound like a value judgment and neither is meant to be.
 
-What I am fairly confident about is that the distinction is real, that it survived the thing that made the old words obsolete, and that we are currently building teams and running interviews with vocabulary that predates most of what we are actually building.
+What I am fairly confident about is that the distinction is there, that it survived the thing that made the old words obsolete, and that we are currently building teams and running interviews with vocabulary that predates most of what we are actually building.
 
 If you have better words for it, send them my way, friends.
