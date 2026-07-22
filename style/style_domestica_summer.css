@@ -617,13 +617,21 @@ list-style:disc;
 
 .domestica .post-content h2 {
 	display: block;
+	position: static;
+	width: auto;
+	left: auto;
 	font-size: 28px;
 	font-weight: 600;
 	margin-top: 40px;
 	margin-bottom: 20px;
+	margin-left: 0;
+	margin-right: 0;
+	padding: 10px 15px;
 	line-height: 1.3em;
 	letter-spacing: -0.02em;
 	color: var(--color-heading);
+	background-color: #eee;
+	border-radius: 3px;
 }
 
 .domestica .post-content h3 {
