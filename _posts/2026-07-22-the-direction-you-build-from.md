@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The Direction You Build From"
-date: 2026-07-22 10:00:00 -0800
+date: 2026-07-22 00:00:00 -0800
 ---
 
 I have been interviewing lately, which means I have spent a lot of time trying to describe what I do.
