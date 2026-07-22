@@ -42,7 +42,7 @@ This is not a tension. It is a cycle. Each direction hands the next one somethin
 
 I would probably have let this sit as a private theory if it were not for what has happened in the last couple of years.
 
-When I am orchestrating the Claude SDK, or the OpenAI SDK, or the Vercel AI SDK, I am writing code that would have been filed under back end without much argument. There is no browser in it. But it does not feel like systems work. It feels like interface work wearing different clothes. You are making decisions about what someone will experience, in what order, with what sense of control, and how it should behave when it goes wrong. The old category says one thing and the actual work says another.
+When I am orchestrating the Claude SDK, or the OpenAI SDK, or the Vercel AI SDK, I am writing code that would have been filed under back end without much argument. There is no browser in it. But it does not feel like systems work. It feels like interface work wearing a mustache and glasses. You are making decisions about what someone will experience, in what order, with what sense of control, and how it should behave when it goes wrong. The old category says one thing and the actual work says another.
 
 That is the clearest sign I have seen that the vocabulary has come loose.
 
@@ -52,7 +52,7 @@ It also seems to explain some of what has happened in this AI era. My honest rea
 
 I want to be careful here, because it would be easy to read this as an argument that one kind of engineer is better. It is not.
 
-My outside understanding of Apple is that they have almost always worked from the user inward. They have not necessarily invented the most technology. They adopt it, and then they iterate on the experience until it is theirs. Google looks like the other direction to me. Enormous systems problems nobody had solved, solved well enough that other people could build good interfaces on top of them.
+My simplified understanding of Apple is that they have almost always worked from the user inward. They have not necessarily invented the most technology. They adopt it, and then they iterate on the experience until it is theirs. Google looks like the other direction to me. Enormous systems problems nobody had solved, solved well enough that other people could build good interfaces on top of them.
 
 Both of those companies are extraordinarily successful and they started from opposite ends. They also need each other more than either would probably like to admit.
 
