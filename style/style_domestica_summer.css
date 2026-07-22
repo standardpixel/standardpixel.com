@@ -63,6 +63,7 @@ table {
 	--color-nav-hover: #2563eb;
 	--color-nav-text: #94a3b8;
 	--color-footer-bg: #ffffff;
+	--color-header-bg: #eeeeee;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -77,6 +78,7 @@ table {
 		--color-nav-hover: #3b82f6;
 		--color-nav-text: #64748b;
 		--color-footer-bg: #0f172a;
+		--color-header-bg: #1e293b;
 	}
 }
 
@@ -653,7 +655,7 @@ list-style:disc;
 	line-height: 1.3em;
 	letter-spacing: -0.02em;
 	color: var(--color-heading);
-	background-color: #eee;
+	background-color: var(--color-header-bg);
 	border-radius: 3px;
 }
 
